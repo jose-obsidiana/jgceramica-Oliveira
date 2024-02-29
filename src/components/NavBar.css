@@ -1,0 +1,17 @@
+.navBar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #d4d4d4;
+    padding: 1rem;
+
+}
+
+.navBar-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0;
+
+}

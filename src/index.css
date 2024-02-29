@@ -1,0 +1,24 @@
+/* Acá van los estilos globales */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+    color: #df7920;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
