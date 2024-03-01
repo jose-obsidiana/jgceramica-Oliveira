@@ -14,11 +14,13 @@ export default function NavBar () {
     <>
         <nav className="navBar">
             <h2 style={logoEstilos}>JG Cerámica</h2>
-            <div className="navBar-link">
-                <EnlaceComponent href='#' texto='productos'/>
-                <EnlaceComponent href='#' texto='talleres'/>
-                <EnlaceComponent href='#' texto='contacto'/>
-                <EnlaceComponent href='#' texto='sobre mí'/>
+            <div>
+                <ul className="navBar-link">
+                    <li><EnlaceComponent href='#' texto='productos'/></li>
+                    <li><EnlaceComponent href='#' texto='talleres'/></li>
+                    <li><EnlaceComponent href='#' texto='contacto'/></li>
+                    <li><EnlaceComponent href='#' texto='sobre mí'/></li>
+                </ul>
             </div>
             <CartWidget/>
         </nav>
