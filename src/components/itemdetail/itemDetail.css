@@ -1,0 +1,20 @@
+.itemdetail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 40% 30%;
+    margin: 10rem;
+    column-gap: 5rem;
+}
+
+.itemdetail-titulo {
+    font-size: 4rem;
+}
+
+.item-description {
+    grid-row: 2/3;
+    grid-column: 2;
+}
+
+.item-count {
+    grid-column: 2;
+}

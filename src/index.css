@@ -1,13 +1,28 @@
 /* Acá van los estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    }
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #FFFFFF;
-    color: #df7920;
+    margin: 0 8rem;
 }
+.navBar {
+    margin: 0 -8rem;
+}
+
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+li {
+    font-size: 2rem;
 }
 
 a {
@@ -16,9 +31,18 @@ a {
 }
 
 h1 {
+    font-size: 3rem;
     text-align: center;
     font-weight: 400;
     letter-spacing: 2px;
-    padding: 2rem;
+    padding: 4rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
+
+p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+

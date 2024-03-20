@@ -5,18 +5,18 @@ export default function CartWidget () {
     const containerCart = {
         position: 'relative',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingLeft: '2rem'
     }
 
     const estilosCart = {
-        width: '25px',
-        height: '25px',
+        width: '20px',
+        height: '18px',
         top: '50%'
 
     }
 
     const contCart = {
-        fontSize: '1.2rem',
         paddingLeft: '2px'
     }
 
