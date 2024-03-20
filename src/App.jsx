@@ -10,7 +10,6 @@ import ItemCategoryContainer from './components/itemCategoryContainer/ItemCatego
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
-
 function App() {
 
   return (
@@ -20,7 +19,7 @@ function App() {
 
         <Routes>
                   {/* productos */}
-          <Route exact path='/' element={<ItemListContainer/>}/>
+          <Route exact path='/' element={<ItemListContainer greeting='Productos Disponibles'/>}/>
           <Route exact path='/category/:categoryId' element={<ItemCategoryContainer/>}/>
           <Route exact path='/item/:itemId' element={<ItemDetailContainer/>} />
 

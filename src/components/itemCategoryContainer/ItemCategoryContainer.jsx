@@ -5,7 +5,7 @@ import ItemList from '../ItemList/ItemList'
 
 
 
-export default function ItemListContainer ({greeting}) {
+export default function ItemCategoryContainer () {
     const [products, setProducts] = useState ([]);
 
     const {categoryId} = useParams()

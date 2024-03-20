@@ -49,7 +49,7 @@ export default function NavBar({category}) {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item dropdown">
-                                        <NavLink to="/" activeClassName="active" className="enlaceNavBar dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleNavLinkClick}>
+                                        <NavLink to="/" className="enlaceNavBar dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleNavLinkClick}>
                                             Productos
                                         </NavLink>
                                         <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`} onClick={closeDropdown}>
@@ -78,7 +78,7 @@ export default function NavBar({category}) {
             <div>
                 <ul className="navBar-link">
                     <li className={`nav-item dropdown ${isOpen ? 'show' : ''}`}>
-                        <NavLink to="/" activeClassName="active" className="enlaceNavBar dropdown-toggle" role="button" onClick={handleNavLinkClick2}>
+                        <NavLink to="/" className="enlaceNavBar dropdown-toggle" role="button" onClick={handleNavLinkClick2}>
                             Productos
                         </NavLink>
                         <ul className={`dropdown-menu menu-productos ${isOpen ? 'show' : ''}`}>
