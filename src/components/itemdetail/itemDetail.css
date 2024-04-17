@@ -1,20 +1,51 @@
 .itemdetail-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% 40% 30%;
-    margin: 10rem;
-    column-gap: 5rem;
+    grid-template-rows: 4% 15% 30%;
+    margin: 10rem 12rem 0;
+    column-gap: 6rem;
 }
 
 .itemdetail-titulo {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+header h2 {
     font-size: 4rem;
 }
 
 .item-description {
-    grid-row: 2/3;
+    grid-row: 3;
     grid-column: 2;
 }
 
 .item-count {
     grid-column: 2;
 }
+
+.picture-item {
+    grid-column: 1;
+}
+
+.button-volver {
+    font-size: 2rem;
+    width: 8rem;
+    height: 3rem;
+}
+.button-volver:hover {
+    color: #868686;
+}
+
+
+.button-compra {
+    font-size: 1.8rem;
+}
+.button-compra:hover {
+    background-color: #82c9ac;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+}
+

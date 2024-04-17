@@ -1,31 +1,28 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import CartWidget from "../CartWidget";
 import botonCerrar from '../../assets/icons/cerrar.png';
 import '../NavBar/NavBar.css';
+import ButtonSearch from '../buttonSearch/ButtonSearch';
+import CartWidget from '../cartWidget/CartWidget'
 
-export default function NavBar({category}) {
+
+export default function NavBar() {
     const logoEstilos = {
         textTransform: 'uppercase',
         display: 'flex',
         alignItems: 'center'
     };
 
-    const handleNavLinkClick = () => {
-        window.location.href = '/';
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsDropdownOpen(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setIsDropdownOpen(false);
     };
 
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-
-    const closeDropdown = () => {
-        setDropdownOpen(false);
-    };
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleNavLinkClick2 = () => {
-        setIsOpen(!isOpen);
-    };
 
     return (
         <>
@@ -41,31 +38,29 @@ export default function NavBar({category}) {
                         <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header menu-boot">
                                 <button type="button" data-bs-dismiss="offcanvas" className="boton-cerrar" aria-label="Close">
-                                    <img src={botonCerrar} className="icon-cerrar"  alt="boton-cerrar" />
-                                </button>
+                                    <img src={botonCerrar} className='icon-cerrar' alt="" />
+                                    </button>
                                 <h5 className="offcanvas-title titulo-boot" id="offcanvasNavbarLabel">JG CERÁMICA</h5>
                                 <CartWidget/>
                             </div>
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li className="nav-item dropdown">
-                                        <NavLink to="/" className="enlaceNavBar dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleNavLinkClick}>
-                                            Productos
-                                        </NavLink>
-                                        <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`} onClick={closeDropdown}>
-                                        <li><NavLink to='/category/jarras' className="dropdown-item a-prod">Jarras</NavLink></li>
-                                        <li><NavLink to='/category/tazas' className="dropdown-item a-prod">Tazas</NavLink></li>
-                                        <li><NavLink to='/category/cuencos' className="dropdown-item a-prod">Cuencos</NavLink></li>
-                                        </ul>
-                                    </li>
-                                    <li><NavLink to="/talleres" className="enlaceNavBar" onClick={closeDropdown}>Talleres</NavLink></li>
-                                    <li><NavLink to="/contacto" className="enlaceNavBar" onClick={closeDropdown}>Contacto</NavLink></li>
-                                    <li><NavLink to="/sobremi" className="enlaceNavBar" onClick={closeDropdown}>Sobre mí</NavLink></li>
+                                <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                                <NavLink to='/' className="nav-link dropdown-toggle enlaceNavBar " role="button"  aria-expanded="false">
+                                    Productos
+                                </NavLink>
+                                <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+                                    <li><NavLink to='/category/tazas' className="dropdown-item">Tazas</NavLink></li>
+                                    <li><NavLink to='/category/cuencos' className="dropdown-item">Cuencos</NavLink></li>
+                                    <li><NavLink to='/category/jarras' className="dropdown-item">Jarras</NavLink></li>
                                 </ul>
-                                <form className="d-flex mt-3" role="search">
-                                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                    <button className="btn btn-outline-success" type="submit">Search</button>
-                                </form>    
+                                </li>
+                                    <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
+                                    <li><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
+                                    <li><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
+
+                                </ul>
+                                <ButtonSearch/>  
                             </div>
                         </div>
                         <CartWidget/>
@@ -77,28 +72,23 @@ export default function NavBar({category}) {
             <NavLink to="/" className="titulo-boot" style={logoEstilos}>JG cerámica</NavLink>
             <div>
                 <ul className="navBar-link">
-                    <li className={`nav-item dropdown ${isOpen ? 'show' : ''}`}>
-                        <NavLink to="/" className="enlaceNavBar dropdown-toggle" role="button" onClick={handleNavLinkClick2}>
-                            Productos
-                        </NavLink>
-                        <ul className={`dropdown-menu menu-productos ${isOpen ? 'show' : ''}`}>
-                            <li><NavLink to='/category/jarras' className="dropdown-item a-prod">Jarras</NavLink></li>
-                            <li><NavLink to='/category/tazas' className="dropdown-item a-prod">Tazas</NavLink></li>
-                            <li><NavLink to='/category/cuencos' className="dropdown-item a-prod">Cuencos</NavLink></li>
-                        </ul>
+                <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <NavLink to="/" className=" dropdown-toggle enlaceNavBar" role="button"  aria-expanded="false">
+                        Productos
+                    </NavLink>
+                    <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
+                        <li><NavLink to='/category/tazas' className="dropdown-item">Tazas</NavLink></li>
+                        <li><NavLink to='/category/cuencos' className="dropdown-item">Cuencos</NavLink></li>
+                        <li><NavLink to='/category/jarras' className="dropdown-item">Jarras</NavLink></li>
+                    </ul>
                     </li>
                     <li><NavLink to="/talleres" className='enlaceNavBar'>talleres</NavLink></li>
                     <li><NavLink to="/contacto" className='enlaceNavBar'>contacto</NavLink></li>
                     <li><NavLink to="/sobremi" className='enlaceNavBar'>sobre mí</NavLink></li>
                 </ul>
             </div>
-                <div className="search">
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="" aria-label="Search"/>
-                        <button className="btn-search" type="submit">Buscar</button>
-                    </form>
-                    <CartWidget/>
-                </div>
+            <ButtonSearch/>
+            <CartWidget/>
             </nav>  
         </>
     );

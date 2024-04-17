@@ -1,0 +1,56 @@
+.input-form {
+    margin-top: 1rem;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+    background-color: white;
+    border-radius: 0;
+}
+
+.input-form:focus {
+    outline: none;
+    background-color: none;
+
+}
+
+.input-form:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Establecer un sombreado para ocultar el color de fondo */
+}
+
+.form-compra {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-compra {
+    width: 50%;
+    margin-top: 3rem;
+    border: 2px solid #adadad;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+
+.lista-cart {
+    padding-bottom: 2rem;
+}
+
+.compra-realizada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+}
+
+.alert-vendedora {
+    background-color: #E8D7FF;
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+}

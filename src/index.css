@@ -9,11 +9,12 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #FFFFFF;
-    margin: 0 8rem;
+    margin: 0 10rem;
 }
 .navBar {
-    margin: 0 -8rem;
+    margin: 0 -10rem;
 }
+
 
 
 ul {
@@ -22,7 +23,7 @@ ul {
     margin: 0;
 }
 li {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 a {
@@ -45,4 +46,31 @@ p {
     margin: 0;
 }
 
+input, textarea {
+    font-size: 1.5rem;
+}
 
+
+button {
+    font-size: 2rem;
+    border: 1px solid grey;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    color: #575757;
+}
+.button:hover {
+    color: rgb(55, 55, 55);
+    border: 2px solid rgb(123, 123, 123); 
+}
+
+h1 {
+    margin: 5rem;
+}
+
+span {
+    font-size: 1.7rem;
+    font-weight: 600;
+}

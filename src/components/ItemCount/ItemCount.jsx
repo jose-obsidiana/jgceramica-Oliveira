@@ -1,6 +1,6 @@
 
 import '../ItemCount/ItemCount.css'
-import {useState} from 'react';
+import { useState } from 'react';
 
 
 export default function ItemCount({stock, onAdd}) {
@@ -18,6 +18,7 @@ export default function ItemCount({stock, onAdd}) {
 
         }
     }
+
 
     return (
         <>

@@ -10,36 +10,30 @@
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .buttonCont {
-    /* width: 3rem;
-    height: 3rem; */
     border: none;
-    border-radius: 10px;
     font-size: 1.5rem;
-    background-color: white;
+    margin-right: 0;
 }
 
 .numCont {
     padding: 0 0.2rem;
     display: flex;
     align-items:center;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .buttonCard {
-    font-size: 2rem;
-    border: 1px solid gray;
-    border-radius: 5px;
+    font-size: 1.7rem;
     padding: 0.2rem;
-    background-color: white;
     width: 100%;
     margin-top: 1rem;
-    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 .buttonCard:hover {
     background-color: #82c9ac;

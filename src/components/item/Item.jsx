@@ -13,7 +13,7 @@ export default function Item({id, name, img, price}) {
             <h3>{name}</h3>
             <img src={img} alt={name} style={{width: '100%'}}/>
             <p style={{fontWeight: '500', padding: '1rem'}}>Precio: ${price}</p>
-            <button className='buttonCard'><Link to={`/item/${id}`} style={{fontSize: '1.5rem'}}>ver detalles</Link></button>
+            <Link to={`/item/${id}`} style={{fontSize: '1.5rem'}}><button className='buttonCard'>ver detalles</button></Link>
         </article>
     </>
     )

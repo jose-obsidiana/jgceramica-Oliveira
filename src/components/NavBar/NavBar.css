@@ -1,68 +1,58 @@
+.menu-productos {
+    transform: translate3d(18px, 0px, 10px) !important;
+    font-size: 2rem;
+}
+.navBar-boot {
+    background-color: white;
+    margin-bottom: 5rem;
 
-.search {
+}
+.menu-boot {
+    justify-content: space-between;
+
+}
+
+.boot-estilos {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.titulo-boot {
+    font-size: 2rem;
+
+}
+
+.icon-boot {
+    display: inline-block;
+    width: 2.3em;
+    height: 2em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.boton-cerrar {
+    border: none;
+    width: 8%;
+    height: 100%;
+    background-color: white;
+    padding: 0;
+}
+.icon-cerrar:hover {
+    color: rgb(220, 220, 220);
+    border-radius: 5px;
+}
+.icon-cerrar {
+    width: 1.8rem;
     display: flex;
     align-items: center;
-    }
-    .btn-search {
-        color: grey;
-        border: 1px solid grey;
-        width: 50%;
-        border-radius: 5px;
-        background-color: white;
-        font-size: 1rem;
-    }
-    .btn-search:hover {
-        background-color: black;
-        color: white;
-    }
-    .menu-productos {
-        transform: translate3d(18px, 25px, 10px) !important;
-    }
-    .navBar-boot {
-        background-color: white;
-        margin-bottom: 5rem;
+    justify-content: center;
 
-    }
-    .menu-boot {
-        justify-content: space-between;
 
-    }
-
-    .boot-estilos {
-        padding: 1rem 2rem;
-        border-bottom: 1px solid rgb(224, 224, 224);
-    }
-    .titulo-boot {
-        font-size: 2rem;
-
-    }
-
-    .icon-boot {
-        display: inline-block;
-        width: 2.3em;
-        height: 2em;
-        vertical-align: middle;
-        background-image: var(--bs-navbar-toggler-icon-bg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-    }
-    .boton-cerrar {
-        border: none;
-        width: 8%;
-        height: 100%;
-        background-color: white;
-    }
-    .icon-cerrar {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .lista-menu-boot {
-        padding-bottom: 5rem;
-    }
+}
+.lista-menu-boot {
+    padding-bottom: 5rem;
+}
     
 
 @media screen and (min-width: 324px) {
@@ -70,14 +60,14 @@
         padding: 0.7rem 0;
         font-size: 1.5rem;
         text-transform: uppercase;
-
+    }
+    .enlaceNavBar:hover {
+        color: #a85e9e; 
     }
 
     .navBar {
         display: none;
     }
-
-
 }
 
 

@@ -1,43 +1,54 @@
 import {useState, useEffect } from "react";
-import { getProducts, getProductsByCategory } from "../../AsyncMock";
 import ItemList from '../ItemList/ItemList'
+import { useParams } from "react-router-dom";
+import { getDocs, collection, query, where } from "firebase/firestore"
+import {db } from '../../../firebase'
+import ReactLoading from 'react-loading';
+
+
+
 
 
 export default function ItemListContainer ({greeting}) {
     const [products, setProducts] = useState ([]);
+    const [loading, setLoading] = useState(true)
 
-    // products
-    useEffect ( () => {
-        getProducts
-        .then (data => {
-            setProducts(data)
-            console.log(data)
-        })
-    }, [] )
+    const {categoryId} = useParams()
 
+    useEffect (() => {
+        setLoading(true)
 
-    // // categories
-    // const {categoryId} = useParams()
+        const collectionRef = collection(db, 'products')
+        const q = categoryId ? query(collectionRef, where("category", "==", categoryId)) : collectionRef
 
-    // useEffect (() => {
-    //     const categoryProduct = categoryId ? getProductsByCategory : getProducts
-    
-    //     categoryProduct(categoryId)
-    //         .then (response => {
-    //             setProducts(response)
-    //             console.log('filtrando')
-    //         })
-    // }, [categoryId])
+        getDocs(q)
+            .then(response => {
+                const productsAdapted = response.docs.map(doc => {
+                    const data = doc.data()
+                    return {id: doc.id, ...data}
+                })
+                setProducts(productsAdapted)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally (() => {
+                setLoading(false)
+            })
+    }, [categoryId])
 
 
     return (
         <>
             <h1>{greeting}</h1>
-            <div>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            {loading ? (
+            <ReactLoading type="spin" style={{width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center',  fill:"#a85e9e"}} />
+            ) : (
                 <ItemList products={products}/>
+            )}
             </div>
-            {/* <h2>category {categoryId}</h2>   */}
-
+           
         </>
     )
 }

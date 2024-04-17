@@ -1,0 +1,59 @@
+.container-flex {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+.container-form {
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    padding: 3rem;
+    width: 62%;
+    height: 75%;
+  
+}
+.container-form label {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.mensaje {
+    grid-column: 1/3;
+}
+
+.submit {
+    grid-row: 4;
+    grid-column: 2;
+    margin-top: 3rem;
+}
+.submit button {
+    width: 100%;
+    padding: 5px 5px;
+    text-transform: uppercase;
+}
+
+.nombre, .apellido, .email, .telefono, .mensaje {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input, textarea, .submit button {
+    border-radius: 10px;
+    border: 1px solid #b7b7b7;
+    height: 4rem;
+    padding: 0 0.7rem;
+}
+.button-enviar {
+    background-color: #E8D7FF;
+}
+
+.icon-alert {
+    width: 5rem;
+    height: 5rem;
+}
