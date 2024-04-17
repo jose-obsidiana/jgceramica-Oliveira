@@ -29,8 +29,6 @@ _Para instalar el proyecto en la pc es necesario entrar al repositorio de Github
  **Para comenzar a correr el proyecto debo ejecutar _npm run dev_ en la terminal**
 
 
-
-[Web del Proyecto](https://jgceramica.netlify.app) |
 [Web del Repositorio Github](https://github.com/jose-obsidiana/jgceramica-Oliveira)
 
 Este Proyecto fue realizado por: _María José Oliveira_
