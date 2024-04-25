@@ -1,8 +1,21 @@
-.itemlist-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    height: 100%;
-    gap: 3rem;
+@media screen and (min-width: 324px) {  
+    .itemlist-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 4rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {  
+
+    .itemlist-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        height: 100%;
+        gap: 3rem;
+    }
 
 }

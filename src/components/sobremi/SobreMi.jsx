@@ -7,7 +7,7 @@ export default function SobreMi() {
         <h1>Sobre Mí</h1>
         <div className="container-bio">
             <picture className='container-img'>
-                <img style={{borderRadius: '50%'}} src="https://res.cloudinary.com/dit43qjpn/image/upload/v1713221792/nbxhtbpfef40r62t9lf0.png" alt="imagen biográfica" />
+                <img className='img-bio img-mobile' src="https://res.cloudinary.com/dit43qjpn/image/upload/v1713221792/nbxhtbpfef40r62t9lf0.png" alt="imagen biográfica" />
             </picture>
             <article className='bio'>
                 <p className='parrafo-bio'>Soy Jimena Galván, una apasionada ceramista que encuentra su hogar en las encantadoras calles de Córdoba Capital. Estoy estudiando en la Universidad Provincial de Córdoba, donde no solo cultivo mi amor por el arte, sino que también me sumerjo en el mundo de la cerámica.</p>

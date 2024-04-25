@@ -30,15 +30,17 @@ export default function ItemDetail({id, name, price, stock, description, img}) {
 
     return (
         <>
-     
         <article className='itemdetail-container'>
+        <h1 className='h1-detail'>Detalle de Producto</h1>
+
             <Link to='/' className='button-volver'>Volver</Link>
             <picture className='picture-item'>
-                <img src={img} alt={name} />    
+                <img className='img-detail' src={img} alt={name} />    
             </picture>
             <header className='itemdetail-titulo'>
                 <h2 >{name}</h2>
             </header>
+  
             <section className='item-description'>
                 <p style={estilos}>{description}</p>
                 <p style={{fontWeight: '400', ...estilos, fontSize: '4rem'}}>${price}</p>

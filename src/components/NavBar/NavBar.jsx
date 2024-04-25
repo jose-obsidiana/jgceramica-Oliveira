@@ -26,16 +26,16 @@ export default function NavBar() {
 
     return (
         <>
-            <div className="navBar-boot">
-                <nav className="navbar fixed-top ">
+            <div className="navBar-boot " >
+                <nav className="navbar fixed-top" id='padding'>
                     <div className="container-fluid boot-estilos">
-                        <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <span className="icon-boot"></span>
+                        <button className="navbar-toggler   " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span className=" icon-menu"></span>
                         </button>           
                         <NavLink to="/" className="titulo-boot">JG cerámica</NavLink>
 
                         
-                        <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div className="offcanvas offcanvas-start menu-desplegable" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header menu-boot">
                                 <button type="button" data-bs-dismiss="offcanvas" className="boton-cerrar" aria-label="Close">
                                     <img src={botonCerrar} className='icon-cerrar' alt="" />
@@ -57,7 +57,7 @@ export default function NavBar() {
                                 </li>
                                     <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
                                     <li><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
-                                    <li><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
+                                    <li  style={{marginBottom: '2rem'}}><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
 
                                 </ul>
                                 <ButtonSearch/>  

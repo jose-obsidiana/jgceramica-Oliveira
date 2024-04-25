@@ -5,20 +5,37 @@
 .navBar-boot {
     background-color: white;
     margin-bottom: 5rem;
-
 }
 .menu-boot {
     justify-content: space-between;
-
 }
 
 .boot-estilos {
-    padding: 1rem 2rem;
+    padding: 1.3rem;
     border-bottom: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 0 3px 0px;
+    margin: 0 1rem;
 }
 .titulo-boot {
     font-size: 2rem;
 
+}
+.navbar {
+    background-color: white;
+
+}
+#padding {
+    padding: 0;
+}
+.icon-menu {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .icon-boot {
@@ -57,7 +74,7 @@
 
 @media screen and (min-width: 324px) {
     .enlaceNavBar {
-        padding: 0.7rem 0;
+        padding: 0.8rem 0;
         font-size: 1.5rem;
         text-transform: uppercase;
     }
@@ -67,7 +84,13 @@
 
     .navBar {
         display: none;
+
     }
+    .menu-desplegable {
+        height: 50%;
+        width: 80%;
+    }
+
 }
 
 
