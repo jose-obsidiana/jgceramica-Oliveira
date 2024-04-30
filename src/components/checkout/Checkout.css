@@ -14,7 +14,8 @@
 }
 
 .input-form:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Establecer un sombreado para ocultar el color de fondo */
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    /* Establecer un sombreado para ocultar el color de fondo */
 }
 
 .form-compra {
@@ -38,8 +39,9 @@
 .compra-realizada {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; 
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
 }
 
 .alert-vendedora {

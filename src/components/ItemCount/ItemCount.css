@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-   
+
 }
 
 .contador {
@@ -24,7 +24,7 @@
 .numCont {
     padding: 0 0.2rem;
     display: flex;
-    align-items:center;
+    align-items: center;
     font-size: 1.8rem;
 }
 
@@ -35,6 +35,7 @@
     margin-top: 1rem;
     letter-spacing: 0.5px;
 }
+
 .buttonCard:hover {
     background-color: #82c9ac;
 }

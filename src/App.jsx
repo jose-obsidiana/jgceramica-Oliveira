@@ -20,21 +20,21 @@ function App() {
     <>
       <BrowserRouter>
         <CartProvider>
-          <NavBar/>
-            <Routes>
-              <Route exact path='/' element={<ItemListContainer greeting='Productos Disponibles'/>}/>
-              <Route exact path='/category/:categoryId' element={<ItemListContainer/>}/>
-              <Route exact path='/item/:itemId' element={<ItemDetailContainer/>} />
-              <Route exact path='/cart' element={<Cart/>} />
-              <Route exact path='/checkout' element={<Checkout/>} />
+          <NavBar />
+          <Routes>
+            <Route exact path='/' element={<ItemListContainer greeting='Productos Disponibles' />} />
+            <Route exact path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route exact path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route exact path='/cart' element={<Cart />} />
+            <Route exact path='/checkout' element={<Checkout />} />
 
-              <Route exact path='/talleres' element={<Talleres/>}/>
-              <Route exact path='/contacto' element={<Contacto/>}/>
-              <Route exact path='/sobremi' element={<SobreMi/>}/>
-            </Routes>
-          <Footer/>
+            <Route exact path='/talleres' element={<Talleres />} />
+            <Route exact path='/contacto' element={<Contacto />} />
+            <Route exact path='/sobremi' element={<SobreMi />} />
+          </Routes>
+          <Footer />
         </CartProvider>
-      </BrowserRouter>      
+      </BrowserRouter>
     </>
   )
 }

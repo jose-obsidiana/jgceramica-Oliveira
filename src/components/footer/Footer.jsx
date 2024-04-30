@@ -8,7 +8,7 @@ import twitter from '../../assets/icons/twitter.png'
 
 
 export default function Footer() {
-  
+
 
     return (
         <>

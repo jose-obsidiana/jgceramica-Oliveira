@@ -2,23 +2,46 @@
     transform: translate3d(18px, 0px, 10px) !important;
     font-size: 2rem;
 }
+
 .navBar-boot {
     background-color: white;
     margin-bottom: 5rem;
-
 }
+
 .menu-boot {
     justify-content: space-between;
-
 }
 
 .boot-estilos {
-    padding: 1rem 2rem;
+    padding: 1.3rem;
     border-bottom: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 0 3px 0px;
+    margin: 0 1rem;
 }
+
 .titulo-boot {
     font-size: 2rem;
 
+}
+
+.navbar {
+    background-color: white;
+
+}
+
+#padding {
+    padding: 0;
+}
+
+.icon-menu {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .icon-boot {
@@ -31,6 +54,7 @@
     background-position: center;
     background-size: 100%;
 }
+
 .boton-cerrar {
     border: none;
     width: 8%;
@@ -38,10 +62,12 @@
     background-color: white;
     padding: 0;
 }
+
 .icon-cerrar:hover {
     color: rgb(220, 220, 220);
     border-radius: 5px;
 }
+
 .icon-cerrar {
     width: 1.8rem;
     display: flex;
@@ -50,24 +76,33 @@
 
 
 }
+
 .lista-menu-boot {
     padding-bottom: 5rem;
 }
-    
+
 
 @media screen and (min-width: 324px) {
     .enlaceNavBar {
-        padding: 0.7rem 0;
+        padding: 0.8rem 0;
         font-size: 1.5rem;
         text-transform: uppercase;
     }
+
     .enlaceNavBar:hover {
-        color: #a85e9e; 
+        color: #a85e9e;
     }
 
     .navBar {
         display: none;
+
     }
+
+    .menu-desplegable {
+        height: 50%;
+        width: 80%;
+    }
+
 }
 
 
@@ -85,7 +120,7 @@
         padding: 0 2rem;
         background-color: white;
     }
-    
+
     .navBar-link {
         display: flex;
         flex-direction: row;
@@ -98,6 +133,3 @@
         font-size: 2rem;
     }
 }
-
-
-

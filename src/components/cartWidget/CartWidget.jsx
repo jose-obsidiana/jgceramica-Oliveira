@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../cartWidget/CartWidget.css'
 
 
-export default function CartWidget () {
+export default function CartWidget() {
 
     const estilosCart = {
         width: '20px',
@@ -18,16 +18,16 @@ export default function CartWidget () {
     }
 
 
-    const {totalQuantity} = useContext(CartContext)
+    const { totalQuantity } = useContext(CartContext)
 
     return (
         <>
-          <div className='container-cart'>
-            <Link className='container-cart' to='/cart'>  
-                <img style={estilosCart} src={carrito} alt="icon-carrito"/>
-                <p style={contCart}>{totalQuantity()}</p>
-            </Link>
-        </div>
+            <div className='container-cart'>
+                <Link className='container-cart' to='/cart'>
+                    <img style={estilosCart} src={carrito} alt="icon-carrito" />
+                    <p style={contCart}>{totalQuantity()}</p>
+                </Link>
+            </div>
         </>
     )
 }
