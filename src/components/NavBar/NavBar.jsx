@@ -93,3 +93,9 @@ export default function NavBar() {
         </>
     );
 }
+  <ButtonSearch />
+                <CartWidget />
+            </nav >
+        </>
+    );
+}

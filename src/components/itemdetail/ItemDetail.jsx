@@ -60,7 +60,6 @@ export default function ItemDetail({ id, name, price, stock, description, img })
                                 (<ItemCount stock={stock} onAdd={handleOnAdd} />)
                         }
                     </div>
-
                 </article>
             </div>
         </>

@@ -4,6 +4,7 @@
 }
 
 .navBar-boot {
+    background-color: white;
     margin-bottom: 5rem;
 }
 
@@ -20,11 +21,12 @@
 
 .titulo-boot {
     font-size: 2rem;
-    text-transform: uppercase;
+
 }
 
 .navbar {
-    background-color: #FCFCFC
+    background-color: white;
+
 }
 
 #padding {
