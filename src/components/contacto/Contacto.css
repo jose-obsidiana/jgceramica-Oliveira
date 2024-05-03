@@ -71,7 +71,7 @@ textarea,
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         column-gap: 3rem;
-        width: 80%;
+        width: 70%;
         padding: 3rem;
 
     }
