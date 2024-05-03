@@ -29,13 +29,23 @@
 }
 
 .buttonCard {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 0.2rem;
     width: 100%;
     margin-top: 1rem;
     letter-spacing: 0.5px;
+    text-transform: lowercase;
 }
 
 .buttonCard:hover {
     background-color: #82c9ac;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .buttonCard {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+    }
+
 }

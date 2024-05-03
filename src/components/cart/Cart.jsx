@@ -14,7 +14,7 @@ export default function Cart() {
     return (
         <>
             <h1>Carrito</h1>
-            <div className="container-carrito" >
+            <div className="container-carrito container-margin" >
                 {
                     cart.map((prod) => (
                         <div key={prod.id} className="container-lista">
@@ -33,11 +33,11 @@ export default function Cart() {
                 }
                 {cart.length > 0 ?
                     <>
-                        <button onClick={() => clearCart()} className="buttonCard clear-cart">Limpiar Carrito</button>
+                        <button onClick={() => clearCart()} className="buttonCard clear-cart uppercase">Limpiar Carrito</button>
                         <div className="container-resumen">
                             <h2 className='lista-cart' style={{ marginBottom: '3rem' }}>Resumen de Compra</h2>
                             <h3>Precio Total: ${precioTotal()}</h3>
-                            <Link to='/checkout'><button className="buttonCard iniciar-compra">Iniciar Compra</button></Link>
+                            <Link to='/checkout'><button className="buttonCard iniciar-compra uppercase">Finalizar Compra</button></Link>
                         </div>
                     </> :
                     (<div>

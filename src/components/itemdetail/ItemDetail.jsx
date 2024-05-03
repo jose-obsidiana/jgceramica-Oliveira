@@ -54,7 +54,7 @@ export default function ItemDetail({ id, name, price, stock, description, img })
                                 (
                                     <div className='botones'>
                                         <Link to='/' > <button className='buttonCard'>Seguir Comprando</button></Link>
-                                        <Link to='/cart' > <button className='buttonCard' style={{ marginLeft: '1.5rem' }}>Finalizar compra</button></Link>
+                                        <Link to='/cart' > <button className='buttonCard' >Finalizar compra</button></Link>
                                     </div>
                                 ) :
                                 (<ItemCount stock={stock} onAdd={handleOnAdd} />)

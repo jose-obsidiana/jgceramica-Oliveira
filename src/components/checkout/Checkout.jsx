@@ -46,7 +46,7 @@ export default function Checkout() {
     return (
         <>
             <h1>Finalizar Compra</h1>
-            <div className='container-carrito'>
+            <div className='container-carrito container-margin'>
                 <div >
                     <form className='form-compra' onSubmit={handleSubmit(comprar)}>
                         <h2>Datos Personales</h2>
