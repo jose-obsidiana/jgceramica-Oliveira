@@ -1,10 +1,12 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, getDocs, collection, query, where, addDoc } from "firebase/firestore"
+import { getFirestore, getDocs, collection, query, where } from "firebase/firestore"
+
 
 
 // Your web app's Firebase configuration
 const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG)
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -47,10 +49,6 @@ export async function getTalleres() {
   console.log(listaTalleres)
   return listaTalleres
 }
-
-
-
-
 
 
 

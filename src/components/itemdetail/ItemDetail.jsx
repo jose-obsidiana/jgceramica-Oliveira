@@ -30,37 +30,39 @@ export default function ItemDetail({ id, name, price, stock, description, img })
 
     return (
         <>
-            <article className='itemdetail-container'>
-                <h1 className='h1-detail'>Detalle de Producto</h1>
+            <div className='container-margin'>
+                <article className='itemdetail-container'>
+                    <h1 className='h1-detail'>Detalle de Producto</h1>
 
-                <Link to='/' className='button-volver'>Volver</Link>
-                <picture className='picture-item'>
-                    <img className='img-detail' src={img} alt={name} />
-                </picture>
-                <header className='itemdetail-titulo'>
-                    <h2 >{name}</h2>
-                </header>
+                    <Link to='/' className='button-volver'>Volver</Link>
+                    <picture className='picture-item'>
+                        <img className='img-detail' src={img} alt={name} />
+                    </picture>
+                    <header className='itemdetail-titulo'>
+                        <h2 >{name}</h2>
+                    </header>
 
-                <section className='item-description'>
-                    <p style={estilos}>{description}</p>
-                    <p style={{ fontWeight: '400', ...estilos, fontSize: '4rem' }}>${price}</p>
-                    <p style={estilos}>Stock: {stock}</p>
-                </section>
+                    <section className='item-description'>
+                        <p style={estilos}>{description}</p>
+                        <p style={{ fontWeight: '400', ...estilos, fontSize: '4rem' }}>${price}</p>
+                        <p style={estilos}>Stock: {stock}</p>
+                    </section>
 
-                <div className='item-count'>
-                    {
-                        cantidadAgregada > 0 ?
-                            (
-                                <div className='botones'>
-                                    <Link to='/' > <button className='buttonCard'>Seguir Comprando</button></Link>
-                                    <Link to='/cart' > <button className='buttonCard' style={{ marginLeft: '1.5rem' }}>Finalizar compra</button></Link>
-                                </div>
-                            ) :
-                            (<ItemCount stock={stock} onAdd={handleOnAdd} />)
-                    }
-                </div>
+                    <div className='item-count'>
+                        {
+                            cantidadAgregada > 0 ?
+                                (
+                                    <div className='botones'>
+                                        <Link to='/' > <button className='buttonCard'>Seguir Comprando</button></Link>
+                                        <Link to='/cart' > <button className='buttonCard' style={{ marginLeft: '1.5rem' }}>Finalizar compra</button></Link>
+                                    </div>
+                                ) :
+                                (<ItemCount stock={stock} onAdd={handleOnAdd} />)
+                        }
+                    </div>
 
-            </article>
+                </article>
+            </div>
         </>
     )
 }

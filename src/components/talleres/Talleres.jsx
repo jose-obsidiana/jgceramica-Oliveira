@@ -25,7 +25,7 @@ export default function Talleres() {
     return (
         <>
             <h1>Talleres</h1>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="container-margin" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 {loading ? (
                     <ReactLoading type="spin" style={{ width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', fill: "#a85e9e" }} />
                 ) : (

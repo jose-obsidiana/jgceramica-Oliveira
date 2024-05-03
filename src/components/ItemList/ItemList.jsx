@@ -5,12 +5,14 @@ export default function ItemList({ products }) {
 
     return (
         <>
-            <section className='itemlist-container'>
-                {products.map((product) => (
-                    <Item key={product.id} {...product} />
-                ))
-                }
-            </section>
+            <div className='container-margin'>
+                <section className='itemlist-container'>
+                    {products.map((product) => (
+                        <Item key={product.id} {...product} />
+                    ))
+                    }
+                </section>
+            </div>
         </>
     )
 }

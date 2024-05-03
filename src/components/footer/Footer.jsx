@@ -14,18 +14,26 @@ export default function Footer() {
         <>
             <footer>
                 <div className='container-icons'>
-                    <picture className='icons-contacto'>
-                        <a target='_blank' className='a-icon' href="https://wa.me/+5493704380459"><img className='icon' src={whatsapp} alt="icono de whatsapp" /> +54 9 3704 38 0459</a>
-                        <a target='_blank' className='a-icon' href=""><img className='icon' src={ubicacion} alt="icono de ubicacion" /> Córdoba, Capital</a>
-                    </picture>
                     <div>
-                        <h1 className='h1-footer'>jg cerámica</h1>
+                        <h2 className='h2-footer'>Contacto</h2>
+                        <picture className='icons-contacto'>
+                            <a target='_blank' className='a-icon' href="https://wa.me/+5493704380459"><img className='icon' src={whatsapp} alt="icono de whatsapp" /> +5493704380459</a>
+                            <a target='_blank' className='a-icon' href="" style={{ marginTop: '1rem' }}><img className='icon' src={ubicacion} alt="icono de ubicacion" /> Córdoba, Capital</a>
+                        </picture>
                     </div>
-                    <picture className='icons-redes'>
-                        <a target='_blank' className='a-icon' href="https://www.facebook.com/profile.php?id=100072114314604"><img className='icon2' src={facebook} alt="icono de facebook" /></a>
-                        <a target='_blank' className='a-icon' href="https://www.instagram.com/jgceramicaa/"><img className='icon2' src={instagram} alt="icono de instagram" /></a>
-                        <a target='_blank' className='a-icon' href=""><img className='icon2' src={twitter} alt="icono de twitter" /></a>
-                    </picture>
+                    <div>
+                        <h1 className='h1-footer'>JG cerámica</h1>
+                    </div>
+
+                    <div>
+                        <h2 className='h2-footer'>Redes Sociales</h2>
+                        <picture className='icons-redes'>
+                            <a target='_blank' className='a-icon' href="https://www.facebook.com/profile.php?id=100072114314604"><img className='icon2' src={facebook} alt="icono de facebook" /></a>
+                            <a target='_blank' className='a-icon' href="https://www.instagram.com/jgceramicaa/"><img className='icon2' src={instagram} alt="icono de instagram" /></a>
+                            <a target='_blank' className='a-icon' href=""><img className='icon2' src={twitter} alt="icono de twitter" /></a>
+                        </picture>
+                        <h3 className='h3-footer'>JG Cerámica</h3>
+                    </div>
                 </div>
             </footer>
         </>

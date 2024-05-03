@@ -5,7 +5,7 @@ export default function SobreMi() {
     return (
         <>
             <h1>Sobre Mí</h1>
-            <div className="container-bio">
+            <div className="container-bio container-margin">
                 <picture className='container-img'>
                     <img className='img-bio img-mobile' src="https://res.cloudinary.com/dit43qjpn/image/upload/v1713221792/nbxhtbpfef40r62t9lf0.png" alt="imagen biográfica" />
                 </picture>

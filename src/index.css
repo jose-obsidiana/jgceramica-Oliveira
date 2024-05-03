@@ -6,12 +6,11 @@
     font-size: 62.5%;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
 
-.navBar {
-    margin: 0 -10rem;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -79,16 +78,14 @@ span {
         flex-direction: column;
     }
 
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: #FFFFFF;
+    .container-margin {
         margin: 0 2rem;
     }
 
 }
 
 @media screen and (min-width: 768px) {
-    body {
+    .container-margin {
         margin: 0 10rem;
     }
 }

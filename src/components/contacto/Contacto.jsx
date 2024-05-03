@@ -53,7 +53,7 @@ export default function Contacto() {
         <>
             <h1>Contacto</h1>
 
-            <div className='container-flex'>
+            <div className='container-flex container-margin'>
                 <form action="" onSubmit={handleSubmit} className="container-form">
                     <div className='nombre'>
                         <label>Nombre</label>
