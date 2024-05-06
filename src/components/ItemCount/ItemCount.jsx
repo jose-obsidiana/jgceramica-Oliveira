@@ -28,7 +28,7 @@ export default function ItemCount({ stock, onAdd }) {
                     <p className='numCont'>{cont}</p>
                     <button className='buttonCont' onClick={clickInc}>+</button>
                 </section>
-                <button className='buttonCard' onClick={() => onAdd(cont)} disabled={!stock} >agregar al carrito</button>
+                <button className='buttonCard agregar-carrito' onClick={() => onAdd(cont)} disabled={!stock} >agregar al carrito</button>
             </div>
         </>
     )

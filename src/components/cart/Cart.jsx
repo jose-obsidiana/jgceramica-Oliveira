@@ -15,22 +15,44 @@ export default function Cart() {
         <>
             <h1>Carrito</h1>
             <div className="container-carrito container-margin" >
-                {
-                    cart.map((prod) => (
-                        <div key={prod.id} className="container-lista">
-                            <section className="containerCart"  >
+
+                <div className="container-lista">
+                    {cart.length > 0 && (
+                        <header className="prod-header">
+                            <p></p>
+                            <p>Producto</p>
+                            <p>Precio</p>
+                            <p>Cantidad</p>
+                            <p>Total</p>
+                        </header>
+                    )}
+                    {cart.length > 0 && (
+                        <header className="header-mobile">
+                            <p></p>
+                            <p className="font-size">Prod.</p>
+                            <p className="font-size">Precio</p>
+                            <p className="font-size">Cant.</p>
+                            <p className="font-size">Total</p>
+                        </header>
+                    )}
+
+                    {
+                        cart.map((prod) => (
+                            <div key={prod.id} className="prod-id" >
                                 <img className="img-cart" src={prod.img} alt={prod.name} />
-                                <h2 style={{ marginRight: '10rem' }}>{prod.name} </h2>
-                                <h3>Precio: ${prod.price}</h3>
-                                <h4>Cantidad: {prod.quantity}</h4>
-                                <h3>Total: ${prod.price * prod.quantity}</h3>
+                                <h2 className="prod-name">{prod.name} </h2>
+
+                                <p className="prod-price">${prod.price}</p>
+                                <p className="prod-quant">{prod.quantity}</p>
+                                <p className="prod-total">${prod.price * prod.quantity}</p>
+
                                 <button className="button-eliminar" onClick={() => removeItem(prod.id)} >
                                     <img className="img-eliminar" src={eliminar} alt='eliminar producto' />
                                 </button>
-                            </section>
-                        </div>
-                    ))
-                }
+                            </div>
+                        ))
+                    }
+                </div>
                 {cart.length > 0 ?
                     <>
                         <button onClick={() => clearCart()} className="buttonCard clear-cart uppercase">Limpiar Carrito</button>
@@ -40,8 +62,8 @@ export default function Cart() {
                             <Link to='/checkout'><button className="buttonCard iniciar-compra uppercase">Finalizar Compra</button></Link>
                         </div>
                     </> :
-                    (<div>
-                        <h2 style={{ paddingLeft: '5rem' }}>No hay Items en el carrito</h2>
+                    (<div className="items-carrito" >
+                        <h2>No hay Items en el carrito</h2>
                         <Link to='/'><button className="button-compra">Ir a Productos</button></Link>
                     </div>)}
             </div>

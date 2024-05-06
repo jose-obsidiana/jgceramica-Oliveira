@@ -23,13 +23,6 @@
     flex-direction: column;
 }
 
-.button-compra {
-    width: 50%;
-    margin-top: 3rem;
-    border: 2px solid #adadad;
-    border-radius: 20px;
-    letter-spacing: 1px;
-}
 
 
 .lista-cart {

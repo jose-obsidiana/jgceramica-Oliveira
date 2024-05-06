@@ -30,11 +30,9 @@ export default function ItemDetail({ id, name, price, stock, description, img })
 
     return (
         <>
-            <div className='container-margin'>
+            <div className='container-margin itemDetail-margin '>
                 <article className='itemdetail-container'>
-                    <h1 className='h1-detail'>Detalle de Producto</h1>
-
-                    <Link to='/' className='button-volver'>Volver</Link>
+                    <Link to='/' className='button-volver' style={{ marginTop: '5rem' }}>Volver</Link>
                     <picture className='picture-item'>
                         <img className='img-detail' src={img} alt={name} />
                     </picture>
@@ -53,8 +51,8 @@ export default function ItemDetail({ id, name, price, stock, description, img })
                             cantidadAgregada > 0 ?
                                 (
                                     <div className='botones'>
-                                        <Link to='/' > <button className='buttonCard'>Seguir Comprando</button></Link>
-                                        <Link to='/cart' > <button className='buttonCard' >Finalizar compra</button></Link>
+                                        <Link to='/' > <button className='buttonCard button-detail' >Seguir Comprando</button></Link>
+                                        <Link to='/cart' > <button className='buttonCard button-detail' >Finalizar compra</button></Link>
                                     </div>
                                 ) :
                                 (<ItemCount stock={stock} onAdd={handleOnAdd} />)

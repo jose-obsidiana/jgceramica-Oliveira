@@ -53,6 +53,7 @@ textarea,
     border: 1px solid #b7b7b7;
     height: 3rem;
     padding: 0 0.7rem;
+
 }
 
 .button-enviar {
@@ -63,6 +64,7 @@ textarea,
     width: 5rem;
     height: 5rem;
 }
+
 
 
 @media screen and (min-width: 1024px) {
@@ -81,6 +83,7 @@ textarea,
     .submit button {
         height: 4rem;
         padding: 0 0.7rem;
+
     }
 
 }

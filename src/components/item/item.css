@@ -2,3 +2,8 @@
     width: 100%;
     text-align: center;
 }
+
+.titulo-item {
+    font-weight: 400;
+    margin-top: 1rem;
+}

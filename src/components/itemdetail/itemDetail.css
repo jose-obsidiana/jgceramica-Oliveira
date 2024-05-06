@@ -35,23 +35,35 @@
     background-color: #82c9ac;
 }
 
-.botones {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.item-count {
     width: 100%;
 }
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+
+.button-detail {
+    width: 100%;
+    padding: 0.5rem;
+}
+
 
 header h2 {
     font-size: 2rem;
 }
 
+
 @media screen and (min-width: 1024px) {
     .itemdetail-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4% 15% 35% 11.5%;
-        margin: 10rem 0 0;
+        grid-template-rows: 10% 15% 32% 14%;
         column-gap: 6rem;
     }
 
@@ -91,8 +103,7 @@ header h2 {
         height: 3rem;
     }
 
-    .botones {
-        gap: 2rem
+    .itemDetail-margin {
+        margin: 13rem 0;
     }
-
 }

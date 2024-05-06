@@ -34,7 +34,8 @@ h1 {
     font-weight: 400;
     letter-spacing: 2px;
     padding: 4rem 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
+    /* , Tahoma, Geneva, Verdana, sans-serif */
     text-transform: uppercase;
 
 }
@@ -59,7 +60,7 @@ button {
     margin-right: 1rem;
     background-color: rgb(255, 255, 255);
     text-transform: uppercase;
-    color: #575757;
+    color: #333333;
 }
 
 .button:hover {
