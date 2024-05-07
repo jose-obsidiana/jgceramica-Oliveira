@@ -52,12 +52,13 @@ textarea,
     border-radius: 10px;
     border: 1px solid #b7b7b7;
     height: 3rem;
-    padding: 0 0.7rem;
+    padding: 0 0.8rem;
 
 }
 
 .button-enviar {
     background-color: #E8D7FF;
+    font-weight: 400;
 }
 
 .icon-alert {
