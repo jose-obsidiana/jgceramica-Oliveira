@@ -6,9 +6,11 @@ import eliminar from '../../assets/icons/eliminar.png';
 
 
 
+
 export default function Cart() {
 
     const { cart, clearCart, removeItem, precioTotal } = useContext(CartContext)
+
 
 
     return (
@@ -67,9 +69,10 @@ export default function Cart() {
                         </div>
                     </> :
                     (<div className="items-carrito" >
-                        <h2>No hay Items en el carrito</h2>
+                        <h2 style={{ color: '#3d3c3c' }}>No hay Items en el carrito</h2>
                         <Link to='/'><button className="button-compra">Ir a Productos</button></Link>
                     </div>)}
+
             </div>
         </>
     )

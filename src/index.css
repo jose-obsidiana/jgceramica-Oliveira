@@ -7,9 +7,11 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Tahoma, sans-serif, 'Segoe UI', Verdana;
     background-color: #FFFFFF;
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -84,7 +86,7 @@ span {
     }
 
     .container-margin {
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
 
 }

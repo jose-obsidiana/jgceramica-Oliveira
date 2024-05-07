@@ -5,6 +5,8 @@ import { Timestamp, addDoc, collection } from 'firebase/firestore'
 import { db } from '../../../firebase'
 import '../checkout/Checkout.css'
 import cohete from '../../assets/icons/cohete.png'
+import casa from '../../assets/icons/casa.png'
+
 
 export default function Checkout() {
 
@@ -46,28 +48,36 @@ export default function Checkout() {
     return (
         <>
             <h1>Finalizar Compra</h1>
-            <div className='container-carrito container-margin'>
+            <div className='container-checkout container-margin'>
                 <div >
                     <form className='form-compra' onSubmit={handleSubmit(comprar)}>
                         <h2>Datos Personales</h2>
                         <input className='input-form' type="text" placeholder='Nombre Completo' {...register('name')} required />
                         <input className='input-form' type="email" placeholder='E-mail' {...register('email')} required />
                         <input className='input-form' type="phone" placeholder='Teléfono' {...register('phone')} required />
-                        <button className='button-compra' type='submit' >Comprar</button>
+                        <button className='button-compra' type='submit' style={{ width: '100%' }} >Comprar</button>
                     </form>
                 </div>
 
-                <div className="container-resumen">
+                <div className='form-compra display-none' style={{ height: '28%' }}>
+                    <section className='container-espera'>
+                        <img className='img-casa' src={casa} alt="imagen espera de entrega" />
+                        <h4 style={{ paddingLeft: '1rem' }}>Entrega</h4>
+                    </section>
+                    <p className='p-espera'>Esperando que se complete la información.</p>
+                </div>
+
+                <div className="form-compra">
                     <h2 className='lista-cart'>Resumen de Compra</h2>
                     {cart.map((prod) => (
-                        <div key={prod.id} className="container-lista">
-                            <img style={{ width: '12%', padding: '1rem', paddingLeft: '0' }} src={prod.img} alt="" />
-                            <h4 >{prod.name} x{prod.quantity}</h4>
+                        <div key={prod.id} className="resumen-checkout">
+                            <img style={{ width: '15%', padding: '1rem', paddingLeft: '0' }} src={prod.img} alt="" />
+                            <h4>{prod.name} x{prod.quantity}</h4>
                         </div>))
                     }
-                    <h3 style={{ marginTop: '2rem' }}>Precio Total: ${precioTotal()}</h3>
+                    <h3 style={{ marginTop: '2rem', fontWeight: '500' }}>Precio Total: ${precioTotal()}</h3>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

@@ -15,7 +15,7 @@
 }
 
 .font-size {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
 }
 
 .prod-id {
@@ -31,7 +31,7 @@
 .prod-price,
 .prod-quant,
 .prod-total {
-   font-size: 1.2rem;
+   font-size: 1.3rem;
 }
 
 
@@ -48,7 +48,7 @@
    border: none;
    background-color: white;
    padding: 0;
-   width: 48%;
+   width: 50%;
    margin: 0;
    display: flex;
    align-items: center;
@@ -57,8 +57,6 @@
 
 .img-eliminar {
    width: 100%;
-   padding-bottom: 5px;
-
 }
 
 .iniciar-compra {
@@ -68,22 +66,34 @@
 }
 
 .items-carrito {
-   display: flex;
-   flex-direction: column;
+   grid-column: 1/3;
+   justify-content: center;
+   text-align: center;
+   background-color: #F5F5F5;
+   height: 10.5rem;
+   padding: 1rem;
+   margin: 0 4rem;
+   margin-bottom: 20rem;
 }
 
 .button-compra {
    padding: 0;
-
 }
 
 .button-compra {
    width: 20rem;
    margin-top: 3rem;
-   border: 2px solid #adadad;
-   border-radius: 20px;
-   letter-spacing: 1px;
+   letter-spacing: 0.5px;
    text-align: center;
+   background-color: #E8D7FF;
+   border-radius: 5px;
+   border: 1px solid #b7b7b7;
+   font-size: 1.7rem;
+   color: #3e3e3e;
+}
+
+.button-compra:hover {
+   background-color: #e4d0ff;
 }
 
 .container-resumen {
@@ -110,6 +120,9 @@
    border-radius: 0;
    background-color: #F5F5F5;
    border: none;
+   color: #333333;
+   border: 1px solid #DCDCDC;
+   margin-bottom: 2rem;
 
 }
 
@@ -131,7 +144,7 @@
    }
 
    .clear-cart {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
    }
 
 
@@ -174,13 +187,12 @@
       margin-top: 0;
    }
 
-
-
-
-
    .items-carrito {
-      grid-column: 1;
-      justify-content: right;
+      grid-column: 1/3;
+      margin: 0 35rem;
+      height: 100%;
+      padding: 4rem 2rem;
+      grid-row: 1/3;
    }
 
    .button-eliminar {
@@ -191,5 +203,10 @@
    .prod-quant,
    .prod-total {
       font-size: 1.7rem;
+   }
+
+   .button-compra {
+      font-size: 1.8rem;
+      padding: 0.3rem 0;
    }
 }
