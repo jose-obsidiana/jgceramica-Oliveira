@@ -29,7 +29,7 @@ export default function Cart() {
                     {cart.length > 0 && (
                         <header className="header-mobile">
                             <p></p>
-                            <p className="font-size">Prod.</p>
+                            <p className="font-size">Producto</p>
                             <p className="font-size">Precio</p>
                             <p className="font-size">Cant.</p>
                             <p className="font-size">Total</p>
@@ -43,7 +43,7 @@ export default function Cart() {
                                 <h2 className="prod-name">{prod.name} </h2>
 
                                 <p className="prod-price">${prod.price}</p>
-                                <p className="prod-quant">{prod.quantity}</p>
+                                <p className="prod-quant">x{prod.quantity}</p>
                                 <p className="prod-total">${prod.price * prod.quantity}</p>
 
                                 <button className="button-eliminar" onClick={() => removeItem(prod.id)} >
@@ -55,7 +55,11 @@ export default function Cart() {
                 </div>
                 {cart.length > 0 ?
                     <>
-                        <button onClick={() => clearCart()} className="buttonCard clear-cart uppercase">Limpiar Carrito</button>
+                        <div className="button-clearprod">
+                            <button onClick={() => clearCart()} className="buttonCard clear-cart uppercase">Limpiar Carrito</button>
+                            <Link to='/'><button className="buttonCard clear-cart uppercase">
+                                ir a Productos</button></Link>
+                        </div>
                         <div className="container-resumen">
                             <h2 className='lista-cart' style={{ marginBottom: '3rem' }}>Resumen de Compra</h2>
                             <h3>Precio Total: ${precioTotal()}</h3>
