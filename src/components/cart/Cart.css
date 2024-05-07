@@ -31,7 +31,11 @@
 .prod-price,
 .prod-quant,
 .prod-total {
-   font-size: 1.3rem;
+   font-size: 1.4rem;
+}
+
+.prod-quant {
+   padding-left: 1rem;
 }
 
 
@@ -41,14 +45,14 @@
 }
 
 .prod-name {
-   font-size: 1.2rem;
+   font-size: 1.3rem;
 }
 
 .button-eliminar {
    border: none;
    background-color: white;
    padding: 0;
-   width: 50%;
+   width: 55%;
    margin: 0;
    display: flex;
    align-items: center;
@@ -62,7 +66,6 @@
 .iniciar-compra {
    background-color: #dcdcdc;
    margin-top: 0.5rem;
-
 }
 
 .items-carrito {
@@ -131,8 +134,8 @@
 
    .container-carrito {
       display: grid;
-      grid-template-columns: 60% 30%;
-      column-gap: 10%;
+      grid-template-columns: 65% 30%;
+      column-gap: 5%;
    }
 
    .header-mobile {
@@ -172,7 +175,7 @@
 
    .prod-name {
       grid-column: 2;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
    }
 
    .prod-price {

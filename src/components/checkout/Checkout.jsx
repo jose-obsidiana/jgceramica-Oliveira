@@ -53,16 +53,19 @@ export default function Checkout() {
                     <form className='form-compra' onSubmit={handleSubmit(comprar)}>
                         <h2>Datos Personales</h2>
                         <input className='input-form' type="text" placeholder='Nombre Completo' {...register('name')} required />
+                        <input className='input-form' type="phone" placeholder='DNI' {...register('dni')} required />
                         <input className='input-form' type="email" placeholder='E-mail' {...register('email')} required />
                         <input className='input-form' type="phone" placeholder='Teléfono' {...register('phone')} required />
-                        <button className='button-compra' type='submit' style={{ width: '100%' }} >Comprar</button>
+                        <button className='button-compra' type='submit' style={{ width: '100%', fontWeight: '400' }} >Comprar</button>
                     </form>
                 </div>
 
                 <div className='form-compra display-none' style={{ height: '28%' }}>
                     <section className='container-espera'>
-                        <img className='img-casa' src={casa} alt="imagen espera de entrega" />
-                        <h4 style={{ paddingLeft: '1rem' }}>Entrega</h4>
+                        <picture className='img-container'>
+                            <img className='img-casa' src={casa} alt="imagen espera de entrega" />
+                        </picture>
+                        <h4 className='entrega'>Entrega</h4>
                     </section>
                     <p className='p-espera'>Esperando que se complete la información.</p>
                 </div>
