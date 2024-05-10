@@ -2,27 +2,38 @@
     display: flex;
     align-items: center;
     height: 100%;
+
 }
 
 .btn-search {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(27, 27, 27);
+    color: rgb(42, 42, 42);
     border: 1px solid grey;
     width: 50%;
     border-radius: 5px;
     background-color: white;
     font-size: 1rem;
+    font-weight: 500;
 
+}
+
+.form-control {
+    height: 100%;
+    margin-top: 2px;
 }
 
 .input-search {
-    height: 2.5rem;
     width: 70rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(193, 193, 193) !important;
+
+
 }
 
 .btn-search:hover {
-    background-color: black;
-    color: white;
+    background-color: #82c9ac;
+
 }

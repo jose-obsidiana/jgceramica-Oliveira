@@ -1,14 +1,14 @@
 
 import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContext'
-import '../itemdetail/itemDetail.css'
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import '../itemdetail/itemDetail.css'
+import Billete from '../../assets/icons/billete.png';
 
 
 
-
-export default function ItemDetail({ id, name, price, stock, description, img }) {
+export default function ItemDetail({ id, name, price, stock, description, img, category }) {
 
     const [cantidadAgregada, setCantidadAgregada] = useState('0')
 
@@ -24,15 +24,19 @@ export default function ItemDetail({ id, name, price, stock, description, img })
     }
 
     const estilos = {
-        marginTop: '1.5rem',
-        fontSize: '2rem'
+        marginTop: '1rem',
+        fontSize: '1.8rem'
     }
 
     return (
         <>
-            <div className='container-margin itemDetail-margin '>
-                <article className='itemdetail-container'>
-                    <Link to='/' className='button-volver' style={{ marginTop: '5rem' }}>Volver</Link>
+            <div className='itemDetail-margin'>
+                <article className='itemdetail-container '>
+                    <nav className='nav-itemdetail'>
+                        <Link to='/' >Inicio /</Link>
+                        <Link to={`/category/${category}`}> {category} /</Link>
+                        <Link className='link'> {name}</Link>
+                    </nav>
                     <picture className='picture-item'>
                         <img className='img-detail' src={img} alt={name} />
                     </picture>
@@ -41,10 +45,15 @@ export default function ItemDetail({ id, name, price, stock, description, img })
                     </header>
 
                     <section className='item-description'>
-                        <p style={estilos}>{description}</p>
-                        <p style={{ fontWeight: '400', ...estilos, fontSize: '4rem' }}>${price}</p>
-                        <p style={estilos}>Stock: {stock}</p>
+                        <p className='p-description'>{description}</p>
+                        <p className='p-description' style={{ fontWeight: '400', ...estilos, fontSize: '3.5rem' }}>${price}</p>
+                        <p className='p-description' style={estilos}>stock: {stock}</p>
+                        <div className='billete'>
+                            <img style={{ width: '3rem', height: '3rem' }} src={Billete} alt='imagen de descuento' />
+                            <p className='p-descuento'> <span>10%</span> de descuento abonando con transferencia</p>
+                        </div>
                     </section>
+
 
                     <div className='item-count'>
                         {

@@ -4,6 +4,8 @@ import ubicacion from '../../assets/icons/ubicacion.png'
 import facebook from '../../assets/icons/facebook.png'
 import instagram from '../../assets/icons/instagram.png'
 import twitter from '../../assets/icons/twitter.png'
+import Jgceramica from '../../assets/icons/jgceramica.png';
+
 
 
 
@@ -21,8 +23,8 @@ export default function Footer() {
                             <a target='_blank' className='a-icon' href="" style={{ marginTop: '1rem' }}><img className='icon' src={ubicacion} alt="icono de ubicacion" /> Córdoba, Capital</a>
                         </picture>
                     </div>
-                    <div>
-                        <h1 className='h1-footer'>JG cerámica</h1>
+                    <div style={{ width: '17%' }}>
+                        <img src={Jgceramica} style={{ width: '100%' }} alt="" />
                     </div>
 
                     <div>

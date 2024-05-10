@@ -6,7 +6,7 @@
 }
 
 .itemDetail-margin {
-    margin: 1rem 2rem;
+    margin: 7rem 2rem;
 }
 
 .itemdetail-titulo {
@@ -62,32 +62,68 @@ header h2 {
     font-size: 2rem;
 }
 
+.link {
+    cursor: default;
+}
+
+.link:visited {
+    color: rgb(100, 100, 100);
+}
+
+.billete {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+
+.nav-itemdetail {
+    font-size: 2rem;
+}
+
+.p-description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.p-descuento {
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
 
 @media screen and (min-width: 1024px) {
     .itemdetail-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 15% 32% 14%;
+        grid-template-rows: 10% 17% 50% 12%;
         column-gap: 6rem;
-    }
-
-    .itemdetail-titulo {
-        grid-column: 2;
-        grid-row: 2;
-        justify-content: left;
+        height: 55rem;
     }
 
     .img-detail {
         margin-bottom: 0;
     }
 
-    header h2 {
-        font-size: 4rem;
+    .nav-itemdetail {
+        font-size: 2.5rem;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .itemdetail-titulo {
+        justify-content: left;
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .item-description {
         grid-row: 3;
         grid-column: 2;
+    }
+
+
+    header h2 {
+        font-size: 4rem;
     }
 
     .item-count {
@@ -108,6 +144,16 @@ header h2 {
     }
 
     .itemDetail-margin {
-        margin: 13rem 0;
+        margin: 10rem 18rem;
+    }
+
+    .billete {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .p-descuento {
+        font-size: 1.5rem;
+        padding-top: 0.2rem;
     }
 }

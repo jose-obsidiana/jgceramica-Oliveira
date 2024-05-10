@@ -52,9 +52,13 @@ export default function NavBar() {
                                             Productos
                                         </NavLink>
                                         <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                                            <li><NavLink to='/category/tazas' className="dropdown-item">Tazas</NavLink></li>
-                                            <li><NavLink to='/category/cuencos' className="dropdown-item">Cuencos</NavLink></li>
-                                            <li><NavLink to='/category/jarras' className="dropdown-item">Jarras</NavLink></li>
+                                            <li><NavLink to='/category/Tazas' className="dropdown-item">Tazas</NavLink></li>
+                                            <li><NavLink to='/category/Jarras' className="dropdown-item">Jarras</NavLink></li>
+                                            <li><NavLink to='/category/Cuencos' className="dropdown-item">Cuencos</NavLink></li>
+                                            <li><NavLink to='/category/Horneros' className="dropdown-item">Horneros</NavLink></li>
+                                            <li><NavLink to='/category/Cazuelas' className="dropdown-item">Cazuelas</NavLink></li>
+
+
                                         </ul>
                                     </li>
                                     <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
@@ -81,9 +85,11 @@ export default function NavBar() {
                                 Productos
                             </NavLink>
                             <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
-                                <li><NavLink to='/category/tazas' className="dropdown-item">Tazas</NavLink></li>
-                                <li><NavLink to='/category/cuencos' className="dropdown-item">Cuencos</NavLink></li>
-                                <li><NavLink to='/category/jarras' className="dropdown-item">Jarras</NavLink></li>
+                                <li><NavLink to='/category/Tazas' className="dropdown-item">Tazas</NavLink></li>
+                                <li><NavLink to='/category/Jarras' className="dropdown-item">Jarras</NavLink></li>
+                                <li><NavLink to='/category/Cuencos' className="dropdown-item">Cuencos</NavLink></li>
+                                <li><NavLink to='/category/Horneros' className="dropdown-item">Horneros</NavLink></li>
+                                <li><NavLink to='/category/Cazuelas' className="dropdown-item">Cazuelas</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink to="/talleres" className='enlaceNavBar'>talleres</NavLink></li>
