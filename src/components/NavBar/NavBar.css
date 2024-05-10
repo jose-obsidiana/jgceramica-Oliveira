@@ -19,11 +19,11 @@
 }
 
 .titulo-boot {
-    width: 15%;
+    width: 25%;
 }
 
 .navbar {
-    background-color: #FCFCFC
+    background-color: white;
 }
 
 #padding {
@@ -106,6 +106,10 @@
 @media screen and (min-width: 1024px) {
     .navBar-boot {
         display: none;
+    }
+
+    .titulo-boot {
+        width: 15%;
     }
 
     .navBar {

@@ -4,7 +4,9 @@ import { CartContext } from '../context/CartContext'
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../itemdetail/itemDetail.css'
-import Billete from '../../assets/icons/billete.png';
+import Billete from '../../assets/icons/billete3.png';
+import Camion from '../../assets/icons/camion1.png';
+
 
 
 
@@ -47,12 +49,18 @@ export default function ItemDetail({ id, name, price, stock, description, img, c
                     <section className='item-description'>
                         <p className='p-description'>{description}</p>
                         <p className='p-description' style={{ fontWeight: '400', ...estilos, fontSize: '3.5rem' }}>${price}</p>
-                        <p className='p-description' style={estilos}>stock: {stock}</p>
+                        <p className='p-description' style={estilos}>stock: {stock} disponibles</p>
                         <div className='billete'>
-                            <img style={{ width: '3rem', height: '3rem' }} src={Billete} alt='imagen de descuento' />
+                            <img style={{ width: '2.2rem', height: '2.2rem', display: 'flex', alignItems: 'end' }} src={Billete} alt='imagen de descuento' />
                             <p className='p-descuento'> <span>10%</span> de descuento abonando con transferencia</p>
                         </div>
+                        < div className='billete'>
+                            <img style={{ width: '2.2rem', height: '2.5rem' }} src={Camion} alt='imagen de descuento' />
+                            <p className='p-descuento' style={{ fontSize: '1.5rem' }}> <span style={{ fontSize: '1.5rem' }}>Envío gratis</span> a partir de los $50.000</p>
+                        </div>
                     </section>
+
+
 
 
                     <div className='item-count'>
@@ -64,11 +72,16 @@ export default function ItemDetail({ id, name, price, stock, description, img, c
                                         <Link to='/cart' > <button className='buttonCard button-detail' >Finalizar compra</button></Link>
                                     </div>
                                 ) :
-                                (<ItemCount stock={stock} onAdd={handleOnAdd} />)
+                                (
+                                    <div>
+                                        <ItemCount stock={stock} onAdd={handleOnAdd} />
+
+                                    </div>)
                         }
                     </div>
-                </article>
-            </div>
+
+                </article >
+            </div >
         </>
     )
 }

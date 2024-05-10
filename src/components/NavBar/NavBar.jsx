@@ -34,7 +34,9 @@ export default function NavBar() {
                         <button className="navbar-toggler   " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span className=" icon-menu"></span>
                         </button>
-                        <NavLink to="/" className="titulo-boot">JG cerámica</NavLink>
+                        <NavLink to="/" className="titulo-boot" style={logoEstilos}>
+                            <img style={{ width: '100%' }} src={Jgceramica} alt="" />
+                        </NavLink>
 
 
                         <div className="offcanvas offcanvas-start menu-desplegable" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">

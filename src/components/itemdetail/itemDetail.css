@@ -79,6 +79,7 @@ header h2 {
 
 .nav-itemdetail {
     font-size: 2rem;
+
 }
 
 .p-description {
@@ -87,7 +88,7 @@ header h2 {
 }
 
 .p-descuento {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     font-size: 1.3rem;
 }
 
@@ -95,13 +96,14 @@ header h2 {
     .itemdetail-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 17% 50% 12%;
+        grid-template-rows: 10% 17% 55% 12%;
         column-gap: 6rem;
         height: 55rem;
     }
 
     .img-detail {
         margin-bottom: 0;
+        width: 100%;
     }
 
     .nav-itemdetail {
@@ -119,6 +121,11 @@ header h2 {
     .item-description {
         grid-row: 3;
         grid-column: 2;
+    }
+
+    .p-description {
+        font-size: 1.7rem;
+
     }
 
 
@@ -153,7 +160,21 @@ header h2 {
     }
 
     .p-descuento {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding-top: 0.2rem;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .button-detail {
+        padding: 0.5rem 2rem;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
     }
 }
