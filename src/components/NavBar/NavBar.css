@@ -19,8 +19,7 @@
 }
 
 .titulo-boot {
-    font-size: 2rem;
-    text-transform: uppercase;
+    width: 15%;
 }
 
 .navbar {
@@ -115,8 +114,9 @@
         flex-direction: row;
         justify-content: space-between;
         border-bottom: 2px solid #d4d4d4;
-        padding: 0 2rem;
+        padding: 0 3rem;
         background-color: white;
+
     }
 
     .navBar-link {

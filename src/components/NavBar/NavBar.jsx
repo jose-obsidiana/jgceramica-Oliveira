@@ -4,6 +4,8 @@ import botonCerrar from '../../assets/icons/cerrar.png';
 import '../NavBar/NavBar.css';
 import ButtonSearch from '../buttonSearch/ButtonSearch';
 import CartWidget from '../cartWidget/CartWidget'
+import Jgceramica from '../../assets/icons/jgceramica.png';
+
 
 
 export default function NavBar() {
@@ -69,7 +71,9 @@ export default function NavBar() {
             </div>
 
             <nav className="navBar">
-                <NavLink to="/" className="titulo-boot" style={logoEstilos}>JG cerámica</NavLink>
+                <NavLink to="/" className="titulo-boot" style={logoEstilos}>
+                    <img style={{ width: '100%' }} src={Jgceramica} alt="" />
+                </NavLink>
                 <div>
                     <ul className="navBar-link">
                         <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -87,8 +91,10 @@ export default function NavBar() {
                         <li><NavLink to="/sobremi" className='enlaceNavBar'>sobre mí</NavLink></li>
                     </ul>
                 </div>
-                <ButtonSearch />
-                <CartWidget />
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <ButtonSearch />
+                    <CartWidget />
+                </div>
             </nav>
         </>
     );
