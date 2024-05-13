@@ -25,22 +25,29 @@ export default function NavBar() {
         setIsDropdownOpen(false);
     };
 
-    const handleNavLinkClick = () => {
-        setIsDropdownOpen(false); //
 
-    }
+
+    // const closeNavMenu = () => {
+    //     // Cierra el menú de navegación cuando se hace clic en un enlace
+    //     const navMenu = document.getElementById('navbarSupportedContent');
+    //     if (navMenu.classList.contains('show')) {
+    //         navMenu.classList.remove('show');
+    //     }
+    // };
+
 
     return (
         <>
-            <div className="navBar-boot">
+            <div className="navBar-boot " >
                 <nav className="navbar fixed-top" id='padding'>
                     <div className="container-fluid boot-estilos">
-                        <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <span className="icon-menu"></span>
+                        <button className="navbar-toggler   " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span className=" icon-menu"></span>
                         </button>
                         <NavLink to="/" className="titulo-boot" style={logoEstilos}>
                             <img style={{ width: '100%' }} src={Jgceramica} alt="" />
                         </NavLink>
+
 
                         <div className="offcanvas offcanvas-start menu-desplegable" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div className="offcanvas-header menu-boot">
@@ -53,7 +60,7 @@ export default function NavBar() {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                     <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                        <NavLink to='/' className="nav-link dropdown-toggle enlaceNavBar " role="button" aria-expanded="false" onClick={handleNavLinkClick}>
+                                        <NavLink to='/' className="nav-link dropdown-toggle enlaceNavBar " role="button" aria-expanded="false">
                                             Productos
                                         </NavLink>
                                         <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
@@ -64,9 +71,10 @@ export default function NavBar() {
                                             <li><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav">Cazuelas</NavLink></li>
                                         </ul>
                                     </li>
-                                    <li><NavLink to="/talleres" className="enlaceNavBar" onClick={handleNavLinkClick}>Talleres</NavLink></li>
-                                    <li><NavLink to="/contacto" className="enlaceNavBar" onClick={handleNavLinkClick}>Contacto</NavLink></li>
-                                    <li style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" onClick={handleNavLinkClick}>Sobre mí</NavLink></li>
+                                    <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
+                                    <li><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
+                                    <li style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
+
                                 </ul>
                                 <ButtonSearch />
                             </div>
