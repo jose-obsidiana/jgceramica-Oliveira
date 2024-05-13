@@ -1,7 +1,8 @@
 .app-container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+
 }
 
 footer {
@@ -11,8 +12,6 @@ footer {
     padding: 0;
     position: relat    /* margin-top: 10rem;ive; */
     border-top: 1px solid rgb(222, 222, 222);
-
-    margin-top: auto;
 }
 
 
