@@ -1,16 +1,14 @@
 .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-
 }
 
 footer {
     background-color: #FCFCFC;
-    /* m
     width: 100%;
     padding: 0;
-    position: relat    /* margin-top: 10rem;ive; */
+    position: relative;
+    margin-top: 10rem;
     border-top: 1px solid rgb(222, 222, 222);
 }
 

@@ -1,6 +1,14 @@
 .menu-productos {
-    transform: translate3d(18px, 0px, 10px) !important;
-    font-size: 2rem;
+    transform: translate3d(1px, 0px, 10px) !important;
+    font-size: 4rem;
+    padding: 2rem;
+    border: none;
+    box-shadow: 0 0 5px 0 rgb(208, 208, 208);
+    width: 40%;
+}
+
+.lista-nav {
+    font-size: 1.3rem;
 }
 
 .navBar-boot {
@@ -81,9 +89,11 @@
 
 @media screen and (min-width: 324px) {
     .enlaceNavBar {
-        padding: 0.8rem 0;
-        font-size: 1.5rem;
+        padding: 1rem 0;
+        font-size: 1.8rem;
         text-transform: uppercase;
+        color: black;
+
     }
 
     .enlaceNavBar:hover {
@@ -134,4 +144,36 @@
         padding: 0 2rem;
         font-size: 2rem;
     }
+
+    .lista-prod {
+        font-size: 1.7rem;
+        padding: 0.5rem 1rem;
+        padding-right: 4rem;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        clear: both;
+        font-weight: 400;
+        color: var(--bs-dropdown-link-color);
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        border-radius: var(--bs-dropdown-item-border-radius, 0);
+        border-radius: 0px;
+    }
+
+    .lista-prod:hover {
+        background-color: #f1f1f1;
+    }
+
+    .lista-prod:active {
+        background-color: #82C9AC;
+    }
+
+    .menu-productos {
+        transform: translate3d(18px, 0px, 10px) !important;
+    }
+
 }

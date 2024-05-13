@@ -26,6 +26,16 @@ export default function NavBar() {
     };
 
 
+
+    const closeNavMenu = () => {
+        // Cierra el menú de navegación cuando se hace clic en un enlace
+        const navMenu = document.getElementById('navbarSupportedContent');
+        if (navMenu.classList.contains('show')) {
+            navMenu.classList.remove('show');
+        }
+    };
+
+
     return (
         <>
             <div className="navBar-boot " >
@@ -53,19 +63,19 @@ export default function NavBar() {
                                         <NavLink to='/' className="nav-link dropdown-toggle enlaceNavBar " role="button" aria-expanded="false">
                                             Productos
                                         </NavLink>
-                                        <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                                            <li><NavLink to='/category/Tazas' className="dropdown-item">Tazas</NavLink></li>
-                                            <li><NavLink to='/category/Jarras' className="dropdown-item">Jarras</NavLink></li>
-                                            <li><NavLink to='/category/Cuencos' className="dropdown-item">Cuencos</NavLink></li>
-                                            <li><NavLink to='/category/Horneros' className="dropdown-item">Horneros</NavLink></li>
-                                            <li><NavLink to='/category/Cazuelas' className="dropdown-item">Cazuelas</NavLink></li>
+                                        <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
+                                            <li><NavLink to='/category/Tazas' className="dropdown-item lista-nav " onClick={closeNavMenu}>Tazas</NavLink></li>
+                                            <li><NavLink to='/category/Jarras' className="dropdown-item lista-nav" onClick={closeNavMenu} >Jarras</NavLink></li>
+                                            <li><NavLink to='/category/Cuencos' className="dropdown-item lista-nav" onClick={closeNavMenu}>Cuencos</NavLink></li>
+                                            <li><NavLink to='/category/Horneros' className="dropdown-item lista-nav" onClick={closeNavMenu}>Horneros</NavLink></li>
+                                            <li><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav" onClick={closeNavMenu}>Cazuelas</NavLink></li>
 
 
                                         </ul>
                                     </li>
-                                    <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
-                                    <li><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
-                                    <li style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
+                                    <li><NavLink to="/talleres" className="enlaceNavBar" onClick={closeNavMenu} >Talleres</NavLink></li>
+                                    <li><NavLink to="/contacto" className="enlaceNavBar" onClick={closeNavMenu} >Contacto</NavLink></li>
+                                    <li style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" onClick={closeNavMenu} >Sobre mí</NavLink></li>
 
                                 </ul>
                                 <ButtonSearch />
@@ -87,11 +97,11 @@ export default function NavBar() {
                                 Productos
                             </NavLink>
                             <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
-                                <li><NavLink to='/category/Tazas' className="dropdown-item">Tazas</NavLink></li>
-                                <li><NavLink to='/category/Jarras' className="dropdown-item">Jarras</NavLink></li>
-                                <li><NavLink to='/category/Cuencos' className="dropdown-item">Cuencos</NavLink></li>
-                                <li><NavLink to='/category/Horneros' className="dropdown-item">Horneros</NavLink></li>
-                                <li><NavLink to='/category/Cazuelas' className="dropdown-item">Cazuelas</NavLink></li>
+                                <li><NavLink to='/category/Tazas' className="lista-prod">Tazas</NavLink></li>
+                                <li><NavLink to='/category/Jarras' className="lista-prod">Jarras</NavLink></li>
+                                <li><NavLink to='/category/Cuencos' className="lista-prod">Cuencos</NavLink></li>
+                                <li><NavLink to='/category/Horneros' className="lista-prod">Horneros</NavLink></li>
+                                <li><NavLink to='/category/Cazuelas' className="lista-prod">Cazuelas</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink to="/talleres" className='enlaceNavBar'>talleres</NavLink></li>
