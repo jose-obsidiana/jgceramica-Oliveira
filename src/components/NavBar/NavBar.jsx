@@ -54,7 +54,7 @@ export default function NavBar() {
                                 <button type="button" data-bs-dismiss="offcanvas" className="boton-cerrar" aria-label="Close">
                                     <img src={botonCerrar} className='icon-cerrar' alt="" />
                                 </button>
-                                <h5 className="offcanvas-title titulo-boot" id="offcanvasNavbarLabel">JG CERÁMICA</h5>
+                                <h5 className="offcanvas-title" id="offcanvasNavbarLabel">JG CERÁMICA</h5>
                                 <CartWidget />
                             </div>
                             <div className="offcanvas-body">
