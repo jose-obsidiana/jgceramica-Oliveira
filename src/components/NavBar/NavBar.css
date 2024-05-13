@@ -3,13 +3,14 @@
     font-size: 4rem;
     padding: 2rem;
     border: none;
-    box-shadow: 0 0 5px 0 rgb(208, 208, 208);
+    box-shadow: 0 0 5px 0 #d0d0d0;
     width: 40%;
 }
 
 .lista-nav {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
+
 }
 
 .navBar-boot {
@@ -90,8 +91,8 @@
 
 @media screen and (min-width: 324px) {
     .enlaceNavBar {
-        padding: 1rem 0;
-        font-size: 1.8rem;
+        padding: 1.5rem 0;
+        font-size: 2rem;
         text-transform: uppercase;
         color: black;
 

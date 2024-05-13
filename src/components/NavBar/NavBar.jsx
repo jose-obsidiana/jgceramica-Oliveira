@@ -68,7 +68,8 @@ export default function NavBar() {
                                             <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Jarras' className="dropdown-item lista-nav">Jarras</NavLink></li>
                                             <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Cuencos' className="dropdown-item lista-nav">Cuencos</NavLink></li>
                                             <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Horneros' className="dropdown-item lista-nav">Horneros</NavLink></li>
-                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav">Cazuelas</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav" style={{ borderBottom: '1px solid #d0d0d0' }} >Cazuelas</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/' className="dropdown-item lista-nav">Ver Todos</NavLink></li>
                                         </ul>
                                     </li>
                                     <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
