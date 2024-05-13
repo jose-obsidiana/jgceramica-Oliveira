@@ -64,10 +64,11 @@ export default function NavBar() {
                                             Productos
                                         </NavLink>
                                         <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
-                                            <li><NavLink to='/category/Tazas' className="dropdown-item lista-nav " onClick={closeNavMenu}>Tazas</NavLink></li>
-                                            <li><NavLink to='/category/Jarras' className="dropdown-item lista-nav" onClick={closeNavMenu} >Jarras</NavLink></li>
-                                            <li><NavLink to='/category/Cuencos' className="dropdown-item lista-nav" onClick={closeNavMenu}>Cuencos</NavLink></li>
-                                            <li><NavLink to='/category/Horneros' className="dropdown-item lista-nav" onClick={closeNavMenu}>Horneros</NavLink></li>
+                                            <li><NavLink to='/category/Tazas' className="dropdown-item lista-nav">Tazas</NavLink></li>
+                                            <li><NavLink to='/category/Jarras' className="dropdown-item lista-nav">Jarras</NavLink></li>
+                                            <li><NavLink to='/category/Cuencos' className="dropdown-item lista-nav">Cuencos</NavLink></li>
+                                            <li><NavLink to='/category/Horneros' className="dropdown-item lista-nav">Horneros</NavLink></li>
+                                            <li><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav">Cazuelas</NavLink></li>
                                             <li><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav" onClick={closeNavMenu}>Cazuelas</NavLink></li>
 
 
