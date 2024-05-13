@@ -64,16 +64,16 @@ export default function NavBar() {
                                             Productos
                                         </NavLink>
                                         <ul className={`dropdown-menu menu-productos ${isDropdownOpen ? 'show' : ''}`}>
-                                            <li><NavLink to='/category/Tazas' className="dropdown-item lista-nav">Tazas</NavLink></li>
-                                            <li><NavLink to='/category/Jarras' className="dropdown-item lista-nav">Jarras</NavLink></li>
-                                            <li><NavLink to='/category/Cuencos' className="dropdown-item lista-nav">Cuencos</NavLink></li>
-                                            <li><NavLink to='/category/Horneros' className="dropdown-item lista-nav">Horneros</NavLink></li>
-                                            <li><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav">Cazuelas</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Tazas' className="dropdown-item lista-nav" >Tazas</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Jarras' className="dropdown-item lista-nav">Jarras</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Cuencos' className="dropdown-item lista-nav">Cuencos</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Horneros' className="dropdown-item lista-nav">Horneros</NavLink></li>
+                                            <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to='/category/Cazuelas' className="dropdown-item lista-nav">Cazuelas</NavLink></li>
                                         </ul>
                                     </li>
-                                    <li><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
-                                    <li><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
-                                    <li style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
+                                    <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to="/talleres" className="enlaceNavBar" >Talleres</NavLink></li>
+                                    <li data-bs-dismiss="offcanvas" aria-label="Close"><NavLink to="/contacto" className="enlaceNavBar" >Contacto</NavLink></li>
+                                    <li data-bs-dismiss="offcanvas" aria-label="Close" style={{ marginBottom: '2rem' }}><NavLink to="/sobremi" className="enlaceNavBar" >Sobre mí</NavLink></li>
 
                                 </ul>
                                 <ButtonSearch />
