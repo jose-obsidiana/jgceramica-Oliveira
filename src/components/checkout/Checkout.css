@@ -46,26 +46,7 @@
     padding-bottom: 2rem;
 }
 
-.compra-realizada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-}
 
-.alert-vendedora {
-    background-color: #E8D7FF;
-    display: flex;
-    flex-direction: column;
-    width: 28%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    text-align: center;
-    border-radius: 10px;
-    padding: 1rem;
-}
 
 .container-espera {
     display: flex;
@@ -98,6 +79,28 @@
     display: none;
 }
 
+.compra-realizada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.alert-vendedora {
+    background-color: #E4D0FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 3rem 2.5rem;
+    box-shadow: 0 0 6px 0 grey;
+}
+
 @media screen and (min-width: 1024px) {
     .container-checkout {
         display: grid;
@@ -108,5 +111,9 @@
 
     .display-none {
         display: grid;
+    }
+
+    .alert-vendedora {
+        width: 35%;
     }
 }

@@ -1,10 +1,18 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: #FCFCFC;
-    margin-top: 10rem;
+    /* m
     width: 100%;
     padding: 0;
-    position: relative;
+    position: relat    /* margin-top: 10rem;ive; */
     border-top: 1px solid rgb(222, 222, 222);
+
+    margin-top: auto;
 }
 
 

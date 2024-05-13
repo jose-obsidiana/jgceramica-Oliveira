@@ -34,9 +34,9 @@ export default function Checkout() {
 
     if (pedidoId) {
         return (
-            <div className='compra-realizada'>
+            <div className='compra-realizada container-margin'>
                 <h1>Muchas Gracias por tu Compra!</h1>
-                <h2>El id de tu pedido es: {pedidoId}</h2>
+                <h2 className='h2-compra'>El id de tu pedido es: {pedidoId}</h2>
                 <div className='alert-vendedora'>
                     <h3 >La vendedora se pondrá en contacto contigo a la brevedad! <img style={{ width: '6%' }} src={cohete} alt="" /></h3>
                 </div>
