@@ -69,7 +69,7 @@ export default function ItemDetail({ id, name, price, stock, description, img, c
                                 (
                                     <div className='botones'>
                                         <Link to='/' > <button className='buttonCard button-detail' >Seguir Comprando</button></Link>
-                                        <Link to='/cart' > <button className='buttonCard button-detail' >Finalizar compra</button></Link>
+                                        <Link to='/cart' > <button className='buttonCard button-detail' >ir al carrito</button></Link>
                                     </div>
                                 ) :
                                 (

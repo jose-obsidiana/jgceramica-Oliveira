@@ -32,6 +32,9 @@
 
 }
 
+.li-taller {
+    font-size: 1.5rem;
+}
 
 @media screen and (min-width: 1024px) {
     .container-talleres {
@@ -61,10 +64,18 @@
         background-color: #E8E8E8;
     }
 
-    .img-container {
+    .li-taller {
+        font-size: 1.7rem;
+    }
+
+    .img-talleres {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
     }
 
+    .img-taller {
+        width: 100%;
+    }
 }

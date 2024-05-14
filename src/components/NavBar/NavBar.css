@@ -7,14 +7,20 @@
     width: 40%;
 }
 
+.dropdown-menu {
+    --bs-dropdown-link-active-color: black !important;
+    --bs-dropdown-link-active-bg: none !important;
+}
+
 .lista-nav {
     font-size: 1.6rem;
     text-transform: uppercase;
-
 }
 
 .navBar-boot {
     margin-bottom: 5rem;
+    justify-content: space-around;
+
 }
 
 .menu-boot {
@@ -22,7 +28,7 @@
 }
 
 .boot-estilos {
-    padding: 1.3rem;
+    padding: 1.3rem 2rem;
     border-bottom: 1px solid rgb(224, 224, 224);
     box-shadow: 0 0 3px 0px;
     margin: 0 1rem;

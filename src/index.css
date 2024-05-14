@@ -49,8 +49,12 @@ p {
 
 input,
 textarea {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+input {
+    touch-action: manipulation;
 }
 
 
@@ -71,7 +75,7 @@ button {
 }
 
 span {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -113,6 +117,10 @@ span {
     h1 {
         font-size: 3rem;
         margin: 5rem;
+    }
+
+    span {
+        font-size: 1.7rem;
     }
 
 }

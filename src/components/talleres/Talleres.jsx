@@ -33,21 +33,21 @@ export default function Talleres() {
                         talleres.map((taller, index) => (
                             <div key={taller.id} className={`taller-${index} talleres`}>
                                 <ul >
-                                    <li><span>Nombre:</span> {taller.nombre}</li>
-                                    <li><span>Duración:</span> {taller.duracion}</li>
-                                    <li><span>Descripción:</span> {taller.descripcion}</li>
-                                    <li><span>Nivel:</span> {taller.nivel}</li>
-                                    <li><span>Instructora:</span> {taller.instructora}</li>
+                                    <li className="li-taller"><span>Nombre:</span> {taller.nombre}</li>
+                                    <li className="li-taller"><span>Duración:</span> {taller.duracion}</li>
+                                    <li className="li-taller"><span>Descripción:</span> {taller.descripcion}</li>
+                                    <li className="li-taller"><span>Nivel:</span> {taller.nivel}</li>
+                                    <li className="li-taller"><span>Instructora:</span> {taller.instructora}</li>
                                 </ul>
                             </div>))
                     }
-                        <div className="img-container">
+                        <div className="img-talleres">
                             <img className="img-taller1 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1713297601/clases2_gcwelh.png" alt="imagen de taller 1" />
                         </div>
-                        <div className="img-container">
+                        <div className="img-talleres">
                             <img className="img-taller2 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1713297601/clases3_ahwl44.png" alt="imagen de taller 2" />
                         </div>
-                        <div className="img-container">
+                        <div className="img-talleres">
                             <img className="img-taller3 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,w_441,h_441,x_0,y_2,ar_1:1/v1713297601/clases_lgmim6.png" alt="imagen de taller 3" />
                         </div></section>
                 )}
