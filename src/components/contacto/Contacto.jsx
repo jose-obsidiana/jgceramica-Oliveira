@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import '../contacto/Contacto.css'
 import Swal from "sweetalert2";
+import whatsapp from '../../assets/icons/socialgris.png'
+import ubicacion from '../../assets/icons/alfilergris.png'
 
 
 export default function Contacto() {
@@ -54,55 +56,72 @@ export default function Contacto() {
             <h1>Contacto</h1>
 
             <div className='container-flex container-margin'>
-                <form action="" onSubmit={handleSubmit} className="container-form">
-                    <div className='nombre'>
-                        <label>Nombre</label>
-                        <input
-                            type="text"
-                            name='nombre'
-                            value={input.nombre}
-                            onChange={handleInput} required />
-                    </div>
 
-                    <div className='apellido'>
-                        <label>Apellido</label>
-                        <input type="text"
-                            name='apellido'
-                            value={input.apellido}
-                            onChange={handleInput} required />
-                    </div>
+                <section className='section-cont'>
+                    <h2 className='h2-contacto'>Otra forma de Contactarte con Nosotros</h2>
+                    <picture className='icons-contacto'>
+                        <a target='_blank' className='icon-cont' href="https://wa.me/+5493704380459"><img className='img-cont' src={whatsapp} alt="icono de whatsapp" /> +5493704380459</a>
+                        <a target='_blank' className='icon-cont' href="" style={{ marginTop: '1rem' }}><img className='img-cont' src={ubicacion} alt="icono de ubicacion" /> jimenagalvan@gmail.com</a>
+                        <a target='_blank' className='icon-cont' href="" style={{ marginTop: '1rem' }}><img className='img-cont' src={ubicacion} alt="icono de ubicacion" /> Córdoba, Capital</a>
+                    </picture>
+                </section>
 
-                    <div className='email'>
-                        <label>E-mail</label>
-                        <input
-                            type="email"
-                            name='email'
-                            value={input.email}
-                            onChange={handleInput} required />
-                    </div>
+                <div className='border-left'>
+                    <form action="" onSubmit={handleSubmit} className="container-form">
 
-                    <div className='telefono'>
-                        <label>Teléfono (opcional)</label>
-                        <input
-                            type="number"
-                            name='telefono'
-                            value={input.telefono}
-                            onChange={handleInput} />
-                    </div>
+                        <div className='nombre'>
+                            <input className='input-contacto'
+                                type="text"
+                                name='nombre'
+                                value={input.nombre}
+                                onChange={handleInput} required
+                                placeholder='Nombre' />
+                        </div>
 
-                    <div className='mensaje'>
-                        <label>Mensaje</label>
-                        <textarea type="text"
-                            name='mensaje'
-                            value={input.mensaje}
-                            onChange={handleInput}
-                            style={{ height: '10rem' }} required />
-                    </div>
+                        <div className='apellido'>
+                            <input className='input-contacto'
+                                type="text"
+                                name='apellido'
+                                value={input.apellido}
+                                onChange={handleInput} required
+                                placeholder='Apellido' />
+                        </div>
 
-                    <div className='submit'>
-                        <button className='button-enviar' type="submit" >Enviar</button>
-                    </div>
-                </form>
+                        <div className='email'>
+                            <input className='input-contacto'
+                                type="email"
+                                name='email'
+                                value={input.email}
+                                onChange={handleInput} required
+                                placeholder='E-mail' />
+                        </div>
+
+                        <div className='telefono'>
+                            <input className='input-contacto'
+                                type="number"
+                                name='telefono'
+                                value={input.telefono}
+                                onChange={handleInput}
+                                placeholder='Teléfono (opcional)' />
+                        </div>
+
+                        <div className='mensaje'>
+                            <textarea className='input-contacto'
+                                type="text"
+                                name='mensaje'
+                                value={input.mensaje}
+                                onChange={handleInput}
+                                style={{ height: '10rem' }} required
+                                placeholder='Mensaje' />
+                        </div>
+
+                        <div className='submit'>
+                            <button className='button-enviar' type="submit" >Enviar</button>
+
+                        </div>
+
+                    </form>
+                </div>
             </div>
 
         </>
