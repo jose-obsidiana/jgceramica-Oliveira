@@ -6,75 +6,148 @@
     margin: 2rem 0;
 }
 
-.img-taller2 {
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.img-taller {
-    border-radius: 50%;
-    width: 32%;
-    box-shadow: 0 0 7px 3px grey;
-}
-
-.img-talleres {
-    display: none;
-}
-
-.taller-0,
-.taller-2 {
-    background-color: #E4D5E2;
-}
-
-.taller-1 {
-    background-color: #E8E8E8;
-
-}
 
 .li-taller {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* codepen */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+body {
+    color: #999999;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+.cards {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    width: 100%;
+
+    &:hover {
+        .card__image {
+            filter: contrast(100%);
+        }
+    }
+}
+
+.card__content {
+    padding: 1rem;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(50%);
+    filter: saturate(140%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+        /* 16:9 aspect ratio */
+    }
+
+    @media (min-width: 40rem) {
+        &::before {
+            padding-top: 66.6%;
+            /* 3:2 aspect ratio */
+        }
+    }
+}
+
+.card__image--fence {
+    background-image: url(https://res.cloudinary.com/dit43qjpn/image/upload/v1715786507/CERAMICA-DESTACADA-749x561_shhhmp.jpg);
+}
+
+.card__image--river {
+    background-image: url(https://res.cloudinary.com/dit43qjpn/image/upload/v1715786694/Taller-sobre-cultura-La-Aguada_s1frio.jpg);
+}
+
+.card__image--record {
+    background-image: url(https://res.cloudinary.com/dit43qjpn/image/upload/a_hflip/v1715782065/tallerceramica_irfm5a.jpg);
+}
+
+
+
+.card__title {
+    color: #636363;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+}
+
+
 @media screen and (min-width: 1024px) {
-    .container-talleres {
-        margin: 0 0 5rem 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 8rem;
-        margin: 0;
-    }
-
-    .taller-1 {
-        grid-row: 1;
-        grid-column: 1;
-        background-color: #E8E8E8;
-    }
-
-    .taller-2 {
-        grid-row: 2;
-        grid-column: 2;
-
-    }
-
-    .taller-0 {
-        grid-row: 3;
-        grid-column: 1;
-        background-color: #E8E8E8;
-    }
 
     .li-taller {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
-    .img-talleres {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-    }
-
-    .img-taller {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
         width: 100%;
     }
 }

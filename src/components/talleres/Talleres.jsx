@@ -22,37 +22,61 @@ export default function Talleres() {
         fetchData()
     }, [])
 
+
     return (
         <>
             <h1>Talleres</h1>
-            <div className="container-margin" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div className="container-margin">
                 {loading ? (
                     <ReactLoading type="spin" style={{ width: '50px', height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', fill: "#a85e9e" }} />
                 ) : (
-                    <section className="container-talleres">{
-                        talleres.map((taller, index) => (
-                            <div key={taller.id} className={`taller-${index} talleres`}>
-                                <ul >
-                                    <li className="li-taller"><span>Nombre:</span> {taller.nombre}</li>
-                                    <li className="li-taller"><span>Duración:</span> {taller.duracion}</li>
-                                    <li className="li-taller"><span>Descripción:</span> {taller.descripcion}</li>
-                                    <li className="li-taller"><span>Nivel:</span> {taller.nivel}</li>
-                                    <li className="li-taller"><span>Instructora:</span> {taller.instructora}</li>
-                                </ul>
-                            </div>))
-                    }
-                        <div className="img-talleres">
-                            <img className="img-taller1 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1713297601/clases2_gcwelh.png" alt="imagen de taller 1" />
-                        </div>
-                        <div className="img-talleres">
-                            <img className="img-taller2 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,ar_1:1/v1713297601/clases3_ahwl44.png" alt="imagen de taller 2" />
-                        </div>
-                        <div className="img-talleres">
-                            <img className="img-taller3 img-taller" src="https://res.cloudinary.com/dit43qjpn/image/upload/c_crop,w_441,h_441,x_0,y_2,ar_1:1/v1713297601/clases_lgmim6.png" alt="imagen de taller 3" />
-                        </div></section>
+
+                    <ul class="cards">
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--fence"></div>
+                                <div class="card__content">
+                                    <div class="card__title">Introducción a la Cerámica</div>
+                                    <div class="card__text">
+                                        <li className="li-taller"><span>Descripción:</span> Taller básico para principiantes que cubre técnicas fundamentales de cerámica</li>
+                                        <li className="li-taller"><span>Duración:</span> 4 semanas</li>
+                                        <li className="li-taller"><span>Nivel:</span> Principiante</li>
+                                        <li className="li-taller"><span> Instructora:</span> Jimena Galván</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--river"></div>
+                                <div class="card__content">
+                                    <div class="card__title">Decoración de Cerámica</div>
+                                    <div class="card__text">
+                                        <li className="li-taller"><span>Descripción:</span> Aprende técnicas de esmaltes y decoración para embellecer tus piezas de cerámica.</li>
+                                        <li className="li-taller"><span>Duración: </span>3 semanas</li>
+                                        <li className="li-taller"><span>Nivel: </span>Intermedio</li>
+                                        <li className="li-taller"><span> Instructora:</span> Jimena Galván</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards__item">
+                            <div class="card">
+                                <div class="card__image card__image--record"></div>
+                                <div class="card__content">
+                                    <div class="card__title">Torno de Cerámica Avanzado</div>
+                                    <div class="card__text">
+                                        <li className="li-taller"><span>Descripción:</span> Un taller avanzado que se centra en el uso del torno de cerámica para crear piezas complejas.</li>
+                                        <li className="li-taller"><span>Duración:</span> 6 semanas</li>
+                                        <li className="li-taller"><span>Nivel:</span> Avanzado</li>
+                                        <li className="li-taller"><span> Instructora:</span> Jimena Galván</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 )}
             </div>
-
         </>
     )
 }
