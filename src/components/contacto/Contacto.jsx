@@ -102,7 +102,7 @@ export default function Contacto() {
                                 name='telefono'
                                 value={input.telefono}
                                 onChange={handleInput}
-                                placeholder='Teléfono (opcional)' />
+                                placeholder='Teléfono' />
                         </div>
 
                         <div className='mensaje'>

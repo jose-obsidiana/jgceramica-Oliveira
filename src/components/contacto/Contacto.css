@@ -1,12 +1,13 @@
 .container-flex {
-    display: grid;
-    grid-template-columns: 40% 55%;
+    display: flex;
+    flex-direction: column;
     gap: 5rem;
 }
 
-.section-cont {
-    flex-grow: 1;
 
+
+.section-cont {
+    display: none;
 }
 
 .container-form {
@@ -15,17 +16,13 @@
     padding: 2rem 1.5rem;
     width: 100%;
     height: 78%;
-    margin: 2rem;
     margin-bottom: 1rem;
-    border-left: 5px solid #82C9AC;
-
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 5px;
 
 }
 
-.container-form label {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-}
+
 
 .mensaje {
     grid-column: 1/3;
@@ -59,7 +56,6 @@ input,
 textarea,
 .submit button {
     border: none;
-    height: 3rem;
     padding: 0.8rem;
     margin-top: 1rem;
     width: 100%;
@@ -75,6 +71,7 @@ textarea,
     border: 1px solid #8d8d8d;
     border-radius: 0;
     color: #575757;
+    border-radius: 5px;
 
 }
 
@@ -109,6 +106,12 @@ textarea,
 
 
 @media screen and (min-width: 1024px) {
+    .container-flex {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        gap: 5rem;
+    }
+
     .container-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -116,6 +119,8 @@ textarea,
         column-gap: 4rem;
         padding: 5rem;
         row-gap: 2rem;
+        border: none;
+        border-left: 5px solid #82C9AC;
     }
 
     input,
@@ -123,7 +128,13 @@ textarea,
     .submit button {
         height: 4rem;
         padding: 0 0.7rem;
+        border-radius: 0;
 
+    }
+
+    .section-cont {
+        display: flex;
+        flex-direction: column;
     }
 
 }
