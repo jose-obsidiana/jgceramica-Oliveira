@@ -52,6 +52,10 @@
     text-transform: uppercase;
 }
 
+.input-contacto:focus {
+    outline: none;
+}
+
 input,
 textarea,
 .submit button {
@@ -80,6 +84,10 @@ textarea,
     font-weight: 400;
 }
 
+.button-enviar:hover {
+    background-color: #90c6af;
+}
+
 .icon-alert {
     width: 5rem;
     height: 5rem;
@@ -87,23 +95,32 @@ textarea,
 
 .h2-contacto {
     color: #636363;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-top: 10rem;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
+
 }
 
 .icon-cont {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 200;
+    color: #636363;
+}
+
+.icon-cont:hover {
+    color: #282828;
 }
 
 .img-cont {
-    width: 10%;
+    width: 8%;
 }
 
+.img-ubic {
+    width: 6%;
+}
 
 @media screen and (min-width: 1024px) {
     .container-flex {
@@ -121,6 +138,7 @@ textarea,
         row-gap: 2rem;
         border: none;
         border-left: 5px solid #82C9AC;
+        border-radius: 0;
     }
 
     input,

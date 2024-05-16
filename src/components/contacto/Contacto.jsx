@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import '../contacto/Contacto.css'
 import Swal from "sweetalert2";
-import whatsapp from '../../assets/icons/socialgris.png'
-import ubicacion from '../../assets/icons/alfilergris.png'
+import whatsapp from '../../assets/icons/w1.png'
+import ubicacion from '../../assets/icons/u1.png'
+import gmail from '../../assets/icons/g1.png'
+
 
 
 export default function Contacto() {
@@ -61,7 +63,7 @@ export default function Contacto() {
                     <h2 className='h2-contacto'>Otra forma de Contactarte con Nosotros</h2>
                     <picture className='icons-contacto'>
                         <a target='_blank' className='icon-cont' href="https://wa.me/+5493704380459"><img className='img-cont' src={whatsapp} alt="icono de whatsapp" /> +5493704380459</a>
-                        <a target='_blank' className='icon-cont' href="" style={{ marginTop: '1rem' }}><img className='img-cont' src={ubicacion} alt="icono de ubicacion" /> jimenagalvan@gmail.com</a>
+                        <a target='_blank' className='icon-cont' href="" style={{ marginTop: '1rem' }}><img className='img-cont img-ubic' src={gmail} alt="icono de ubicacion" /> jimenagalvan@gmail.com</a>
                         <a target='_blank' className='icon-cont' href="" style={{ marginTop: '1rem' }}><img className='img-cont' src={ubicacion} alt="icono de ubicacion" /> Córdoba, Capital</a>
                     </picture>
                 </section>
